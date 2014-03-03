@@ -1,0 +1,1457 @@
+version=1;
+class GraphItems
+{
+	class Item0
+	{
+		Flags=250;
+		BasicText="";
+		Left=-147.37946;
+		Top=-489.83273;
+		Right=-57.379501;
+		Bottom=-439.83273;
+		BgColor=255;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontUnderline=1;
+			FontCharSet=0;
+			ItemType=0;
+			class ItemInfo
+			{
+				Id=1;
+			};
+		};
+	};
+	class Item1
+	{
+		Flags=250;
+		BasicText="";
+		Left=-140.27492;
+		Top=-379.01077;
+		Right=-50.274864;
+		Bottom=-329.01077;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="INIT";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=15;
+			FontWidth=0.14999999;
+			FontWeight=700;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=3;
+			};
+		};
+	};
+	class Item2
+	{
+		Flags=250;
+		BasicText="";
+		Left=-139.86719;
+		Top=-198.29813;
+		Right=-49.86734;
+		Bottom=-148.29816;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="NORMAL";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=9;
+			};
+		};
+	};
+	class Item3
+	{
+		Flags=250;
+		BasicText="";
+		Left=-957.61346;
+		Top=898.87347;
+		Right=-867.61346;
+		Bottom=948.87372;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="UNCONSCIOUS";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=5;
+			};
+		};
+	};
+	class Item4
+	{
+		Flags=250;
+		BasicText="";
+		Left=213.7718;
+		Top=114.37768;
+		Right=303.77161;
+		Bottom=164.37766;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="PAIN";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=6;
+			};
+		};
+	};
+	class Item5
+	{
+		Flags=250;
+		BasicText="";
+		Left=-678.04651;
+		Top=102.54497;
+		Right=-588.04675;
+		Bottom=152.54494;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="BLEEDING";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=7;
+			};
+		};
+	};
+	class Item6
+	{
+		Flags=250;
+		BasicText="";
+		Left=-297.77414;
+		Top=96.13089;
+		Right=-139.80876;
+		Bottom=147.91943;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="PAIN AND BLEEDING";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=8;
+			};
+		};
+	};
+	class Item7
+	{
+		Flags=218;
+		BasicText="";
+		Left=-140.75128;
+		Top=-265.08313;
+		Right=-50.751236;
+		Bottom=-215.08313;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=10;
+			};
+		};
+	};
+	class Item8
+	{
+		Flags=218;
+		BasicText="";
+		Left=-601.70612;
+		Top=-56.290062;
+		Right=-511.70642;
+		Bottom=-6.290041;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=11;
+			};
+		};
+	};
+	class Item9
+	{
+		Flags=218;
+		BasicText="";
+		Left=-69.80217;
+		Top=45.436844;
+		Right=20.197823;
+		Bottom=95.436844;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=34;
+			};
+		};
+	};
+	class Item10
+	{
+		Flags=218;
+		BasicText="";
+		Left=264.22632;
+		Top=-65.990364;
+		Right=354.22617;
+		Bottom=-15.990423;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=13;
+			};
+		};
+	};
+	class Item11
+	{
+		Flags=218;
+		BasicText="";
+		Left=-312.88623;
+		Top=252.42212;
+		Right=-222.88617;
+		Bottom=302.42215;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=15;
+			};
+		};
+	};
+	class Item12
+	{
+		Flags=218;
+		BasicText="";
+		Left=-501.5134;
+		Top=153.06653;
+		Right=-411.5134;
+		Bottom=203.06662;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=19;
+			};
+		};
+	};
+	class Item13
+	{
+		Flags=218;
+		BasicText="";
+		Left=149.46533;
+		Top=262.84946;
+		Right=239.46536;
+		Bottom=312.84949;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=20;
+			};
+		};
+	};
+	class Item14
+	{
+		Flags=218;
+		BasicText="";
+		Left=-175.22977;
+		Top=255.5354;
+		Right=-85.229744;
+		Bottom=305.53537;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=21;
+			};
+		};
+	};
+	class Item15
+	{
+		Flags=218;
+		BasicText="";
+		Left=134.89209;
+		Top=-72.155563;
+		Right=223.38443;
+		Bottom=-17.879671;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=23;
+				ConditionTab=1;
+			};
+		};
+	};
+	class Item16
+	{
+		Flags=218;
+		BasicText="";
+		Left=-493.55197;
+		Top=54.147579;
+		Right=-403.55197;
+		Bottom=104.14758;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=35;
+			};
+		};
+	};
+	class Item17
+	{
+		Flags=218;
+		BasicText="";
+		Left=-744.23462;
+		Top=-62.857498;
+		Right=-654.23535;
+		Bottom=-12.857487;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=25;
+			};
+		};
+	};
+	class Item18
+	{
+		Flags=250;
+		BasicText="";
+		Left=-658.74615;
+		Top=456.39984;
+		Right=-568.74603;
+		Bottom=506.39996;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="UNCONSCIOUS" \n "bleeding";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=26;
+			};
+		};
+	};
+	class Item19
+	{
+		Flags=250;
+		BasicText="";
+		Left=223.06618;
+		Top=461.42865;
+		Right=334.62625;
+		Bottom=509.63214;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="UNCONSCIOUS" \n "pain";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=27;
+			};
+		};
+	};
+	class Item20
+	{
+		Flags=250;
+		BasicText="";
+		Left=-237.43663;
+		Top=459.56021;
+		Right=-125.8765;
+		Bottom=511.35703;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="UNCONSCIOUS" \n "pain and bleeding";
+			lStyle=-842150451;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=3;
+			class ItemInfo
+			{
+				Id=28;
+			};
+		};
+	};
+	class Item21
+	{
+		Flags=218;
+		BasicText="";
+		Left=308.18158;
+		Top=262.53955;
+		Right=398.18143;
+		Bottom=312.53955;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=29;
+			};
+		};
+	};
+	class Item22
+	{
+		Flags=218;
+		BasicText="";
+		Left=-425.13693;
+		Top=413.1987;
+		Right=-335.13724;
+		Bottom=463.19888;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=30;
+			};
+		};
+	};
+	class Item23
+	{
+		Flags=218;
+		BasicText="";
+		Left=-803.59778;
+		Top=498.87808;
+		Right=-713.59778;
+		Bottom=548.87805;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=32;
+			};
+		};
+	};
+	class Item24
+	{
+		Flags=218;
+		BasicText="";
+		Left=-969.80804;
+		Top=-163.34406;
+		Right=-879.80804;
+		Bottom=-113.34404;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=33;
+			};
+		};
+	};
+	class Item25
+	{
+		Flags=218;
+		BasicText="";
+		Left=-56.188034;
+		Top=151.94759;
+		Right=33.812126;
+		Bottom=201.94759;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=36;
+			};
+		};
+	};
+	class Item26
+	{
+		Flags=218;
+		BasicText="";
+		Left=317.00128;
+		Top=638.771;
+		Right=407.00113;
+		Bottom=688.771;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=37;
+			};
+		};
+	};
+	class Item27
+	{
+		Flags=218;
+		BasicText="";
+		Left=-423.43161;
+		Top=508.33545;
+		Right=-333.43167;
+		Bottom=558.33545;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=38;
+			};
+		};
+	};
+	class Item28
+	{
+		Flags=218;
+		BasicText="";
+		Left=172.93155;
+		Top=637.38391;
+		Right=262.93158;
+		Bottom=687.38391;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=39;
+			};
+		};
+	};
+	class Item29
+	{
+		Flags=218;
+		BasicText="";
+		Left=-825.34052;
+		Top=418.89917;
+		Right=-735.34052;
+		Bottom=468.89917;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=40;
+			};
+		};
+	};
+	class Item30
+	{
+		Flags=218;
+		BasicText="";
+		Left=-35.541523;
+		Top=422.91501;
+		Right=54.458496;
+		Bottom=472.91501;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=41;
+			};
+		};
+	};
+	class Item31
+	{
+		Flags=218;
+		BasicText="";
+		Left=-20.881227;
+		Top=512.6734;
+		Right=69.118774;
+		Bottom=562.67334;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=42;
+			};
+		};
+	};
+	class Item32
+	{
+		Flags=218;
+		BasicText="";
+		Left=-731.81116;
+		Top=252.14664;
+		Right=-641.81116;
+		Bottom=302.14664;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=43;
+			};
+		};
+	};
+	class Item33
+	{
+		Flags=218;
+		BasicText="";
+		Left=-610.54358;
+		Top=248.90553;
+		Right=-520.54358;
+		Bottom=298.90552;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=44;
+			};
+		};
+	};
+};
+class GraphLinks
+{
+	class Link0
+	{
+		From=0;
+		To=1;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link1
+	{
+		From=1;
+		To=7;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link2
+	{
+		From=2;
+		To=8;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link3
+	{
+		From=2;
+		To=10;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link4
+	{
+		From=3;
+		To=24;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link5
+	{
+		From=3;
+		To=28;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link6
+	{
+		From=3;
+		To=29;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link7
+	{
+		From=4;
+		To=9;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link8
+	{
+		From=4;
+		To=13;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link9
+	{
+		From=4;
+		To=15;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link10
+	{
+		From=5;
+		To=12;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link11
+	{
+		From=5;
+		To=17;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link12
+	{
+		From=5;
+		To=33;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link13
+	{
+		From=6;
+		To=14;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link14
+	{
+		From=6;
+		To=16;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link15
+	{
+		From=6;
+		To=25;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link16
+	{
+		From=7;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link17
+	{
+		From=8;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link18
+	{
+		From=9;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link19
+	{
+		From=10;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link20
+	{
+		From=11;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link21
+	{
+		From=12;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link22
+	{
+		From=13;
+		To=19;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link23
+	{
+		From=14;
+		To=20;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link24
+	{
+		From=15;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link25
+	{
+		From=16;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link26
+	{
+		From=17;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link27
+	{
+		From=18;
+		To=23;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link28
+	{
+		From=18;
+		To=27;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link29
+	{
+		From=18;
+		To=32;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link30
+	{
+		From=19;
+		To=21;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link31
+	{
+		From=19;
+		To=26;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link32
+	{
+		From=19;
+		To=31;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link33
+	{
+		From=20;
+		To=11;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link34
+	{
+		From=20;
+		To=22;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link35
+	{
+		From=20;
+		To=30;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link36
+	{
+		From=21;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link37
+	{
+		From=22;
+		To=18;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link38
+	{
+		From=23;
+		To=3;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link39
+	{
+		From=24;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link40
+	{
+		From=25;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link41
+	{
+		From=26;
+		To=3;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link42
+	{
+		From=27;
+		To=20;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link43
+	{
+		From=28;
+		To=19;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link44
+	{
+		From=29;
+		To=18;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link45
+	{
+		From=30;
+		To=19;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link46
+	{
+		From=31;
+		To=20;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link47
+	{
+		From=32;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link48
+	{
+		From=33;
+		To=18;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+};
+class Globals
+{
+	NextGroupID=2;
+	NextID=45;
+	FSMName="soldier_status";
+	class DefaultLink
+	{
+		ArrowSize=0;
+	};
+	DefaultLinkColor=6316128;
+	DefaultLinkUseCustom=1;
+	PZoomLeft=-1256.6796;
+	PZoomRight=863.45203;
+	PZoomBottom=968.84351;
+	PZoomTop=-327.14197;
+	Clxs=1011;
+	Clys=618;
+	Aspect=1;
+};
+class Window
+{
+	Flags=0;
+	MaxPosX=-1;
+	MaxPosY=-1;
+	MinPosX=-1;
+	MinPosY=-1;
+	Left=371;
+	Top=122;
+	Right=1631;
+	Bottom=871;
+	ShowCmd=1;
+	SplitPos=1028;
+};
