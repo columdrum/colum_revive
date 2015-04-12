@@ -1,0 +1,1118 @@
+version=1;
+class GraphItems
+{
+	class Item0
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=-75;
+		Right=50;
+		Bottom=-25;
+		BgColor=255;
+		class ItemInfo
+		{
+			Text="Start";
+			lStyle=-842150451;
+			Shape=6;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontUnderline=1;
+			FontCharSet=0;
+			ItemType=0;
+			class ItemInfo
+			{
+				Id=0;
+			};
+		};
+	};
+	class Item1
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=1025;
+		Right=50;
+		Bottom=1075;
+		BgColor=33023;
+		class ItemInfo
+		{
+			Text="End";
+			lStyle=-842150451;
+			Shape=6;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontCharSet=0;
+			ItemType=1;
+			class ItemInfo
+			{
+				Id=1;
+				InitCode="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "player switchCamera ""INTERNAL"";" \n "player cameraEffect[""terminate"", ""FRONT""];" \n "deletevehicle _bird;" \n "deleteMarkerLocal _dirmarker;" \n "GVAR(SPECTATINGON) = nil;" \n "[_player, _killer, ""noWait""] execFSM ""x\ace\addons\sys_spectator\specta.fsm"";";
+			};
+		};
+	};
+	class Item2
+	{
+		Flags=4314;
+		BasicText="";
+		Left=-50;
+		Top=300;
+		Right=50;
+		Bottom=350;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Action";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=2;
+				Condition="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "if (dialog && time >= _timeend) then {" \n "	GVAR(cameraIdx) = GVAR(NewCameraIdx);" \n "	_fangle = GVAR(fangle);" \n "	_fangleY = GVAR(fangleY);" \n "	GVAR(mouseDeltaPos) set [0, GVAR(mouseLastX) - (GVAR(MouseCoord) select 0)];" \n "	GVAR(mouseDeltaPos) set [1, GVAR(mouseLastY) - (GVAR(MouseCoord) select 1)];" \n "	GVAR(mouseLastX) = GVAR(MouseCoord) select 0;" \n "	GVAR(mouseLastY) = GVAR(MouseCoord) select 1;" \n "	// don't move MouseScroll to events!" \n "	if (GVAR(MouseScroll) != 0) then {" \n "		// Mouse scroll wheel - Adjust distance" \n "		GVAR(sdistance) = GVAR(sdistance) - (GVAR(MouseScroll) * 0.11);" \n "		GVAR(MouseScroll) = GVAR(MouseScroll) * 0.75;" \n "		switch (true) do {" \n "			case (GVAR(sdistance) > GVAR(maxDistance)): {GVAR(sdistance) = GVAR(maxDistance)};" \n "			case (GVAR(sdistance) < -GVAR(maxDistance)): {GVAR(sdistance) = -GVAR(maxDistance)};" \n "		};" \n "		if (GVAR(sdistance) < -0.6) then {GVAR(sdistance) = -0.6};" \n "	};" \n "	_sdistance = GVAR(sdistance);" \n "	" \n "	if (!isNil ""ace_wounds_prevtime"") then {" \n "		if (!ace_wounds_no_prevtime) then {" \n "			_acer = player getVariable ""ace_w_revive"";" \n "			if (isNil ""_acer"") then {_acer = -1};" \n "			if (_acer != -1) then {" \n "				_ctlr = (findDisplay 55001) displayCtrl 50022;" \n "				_ctlr ctrlSetText format [_strlt, (round (_acer - time)) max 0];" \n "				_ctlr ctrlCommit 0;" \n "			};" \n "		};" \n "	};" \n "	" \n "	// CHECK FOR NEW PLAYER TARGET" \n "	_llbsize = lbSize _cLBTargets;" \n "	if (_llbsize > 0 && !GVAR(updating_lb)) then {" \n "		if (lbCurSel _cLBTargets > (_llbsize - 1)) then {" \n "			lbSetCurSel [_cLBTargets, _llbsize - 1]; // Selection outside listbox size" \n "		};" \n "		if (_tgtSelLast != lbCurSel _cLBTargets) then {" \n "			GVAR(DroppedCamera) = false;" \n "			" \n "			for ""_idx"" from 0 to (lbSize _cLBTargets) - 1 do {" \n "				if (_idx == (lbSize _cLBTargets)) exitWith {};" \n "				if (lbValue [_cLBTargets, _idx] == _lasttgtIdx) exitWith {" \n "					_ot = GVAR(deathcam) select _lasttgtIdx;" \n "					_oside = GVAR(sidecache) select _lasttgtIdx;" \n "					_coldidx = if (alive _ot) then {switch (_oside) do {case west: {1};case east: {2};case resistance: {3};case civilian: {4};}} else {5};" \n "					lbSetColor [_cLBTargets, _idx, _clbcols select _coldidx];" \n "				};" \n "			};" \n "			" \n "			if (GVAR(cameraIdx) == 4) then {GVAR(target) switchCamera ""INTERNAL""};" \n "			_tgtSelLast = lbCurSel _cLBTargets; //immediately capture the last selected target index" \n "			GVAR(tgtIdx) = lbValue [_cLBTargets, _tgtSelLast]; // Get the new player target" \n "			_lasttgtIdx = GVAR(tgtIdx);" \n "			lbSetColor [_cLBTargets, _tgtSelLast, [1, 0.5, 0, 1]];" \n "		};" \n "	};" \n "	" \n "	// Check for new units every 4 seconds" \n "	if (time - GVAR(lastCheckNewUnits) > 4 && !GVAR(MissileCamActive) && !GVAR(NeedUpdateLB) && !GVAR(newCheckUn)) then {" \n "		//player setVariable [""BIS_IS_inAgony"",false]; " \n "		GVAR(newCheckUn) = true;" \n "		[_markstr,_unknownstr,_cameras] spawn FUNC(CheckNew);" \n "	};" \n "	" \n "	// If there are no Cameras attached to soldiers yet then then exit the call loop and continue" \n "	if (count GVAR(deathCam) < 1) then {_ret = true};" \n "	if (!GVAR(Spect_Init)) then {if (count GVAR(deathCam) > 0) then {player groupChat (localize ""STR_ACE_SPECT_INITED""); GVAR(Spect_Init) = true}};" \n "	" \n "	// Request listbox update every 20 seconds to update dead units or jip player names" \n "	// or when NeedUpdateLB is set to true" \n "	if ((GVAR(NeedUpdateLB) || (time - GVAR(lastAutoUpdateLB) > 20)) && !GVAR(MissileCamActive) && !GVAR(markersrun) && !GVAR(newCheckUn) && !GVAR(updating_lb)) then {" \n "		[_cLBTargets, GVAR(sidecache), GVAR(namecache), _deadstr, _clbcols] spawn FUNC(UpdateLB);" \n "	};" \n "	" \n "	if (!GVAR(updating_lb)) then {" \n "		if (!(GVAR(target) in GVAR(units))) then {" \n "			if (lbSize _cLBTargets > 0) then {" \n "				GVAR(tgtIdx) = lbValue [_cLBTargets, 0];" \n "			};" \n "		};" \n "	" \n "		// lbSort menuTargets;	" \n "		// Check limits" \n "		switch (true) do {" \n "			case (GVAR(tgtIdx) > (count GVAR(deathCam) - 1)): {GVAR(tgtIdx) = (count GVAR(deathCam)) - 1};" \n "			case (GVAR(tgtIdx) < 0): {GVAR(tgtIdx) = 0};" \n "		};" \n "	};" \n "" \n "	// Select camera, get target" \n "	if (!GVAR(MissileCamActive)) then {" \n "		// If not in First Person mode rest camera" \n "		GVAR(target) = GVAR(deathCam) select GVAR(tgtIdx);  // reset camera to the new or current player target" \n "		if (_oldtarget != GVAR(target)) then {" \n "			if (!isNull _oldtarget) then {(vehicle _oldtarget) setVariable [QUOTE(GVAR(mapmove)), false]};" \n "		};" \n "		_oldtarget = GVAR(target);" \n "		if (GVAR(cameraIdx) != 4) then {" \n "			if (_oldCameraIdx != GVAR(cameraIdx) || GVAR(MissileCamOver)) then {" \n "				GVAR(MissileCamOver) = false;" \n "				//(_cameras select GVAR(cameraIdx)) switchCamera ""INTERNAL"";" \n "				(_cameras select GVAR(cameraIdx)) cameraEffect[""internal"", ""BACK""];" \n "				(_cameras select GVAR(cameraIdx)) camCommit 0;" \n "				_oldCameraIdx = GVAR(cameraIdx);" \n "			};" \n "		};" \n "	};" \n "	if (GVAR(cameraIdx) == 4) then {" \n "		if (GVAR(1stGunner)) then {" \n "			if (cameraView != ""GUNNER"") then {(vehicle GVAR(target)) switchCamera ""GUNNER""};" \n "		} else {" \n "			(vehicle GVAR(target)) switchCamera ""INTERNAL"";" \n "		};" \n "		_oldCameraIdx = GVAR(cameraIdx);" \n "		(vehicle GVAR(target)) cameraEffect [""terminate"",""BACK""];" \n "		//(vehicle GVAR(target)) cameraEffect [""terminate"",""FRONT""];" \n "		//(vehicle GVAR(target)) camcommit 0.5;" \n "		(vehicle GVAR(target)) camCommit 0.01;" \n "	};" \n "	" \n "	lbSetCurSel [_cLBCameras, GVAR(cameraIdx)];	// reset camera mode selection in the listbox to the new or current camera mode" \n "" \n "	if (lbValue [_cLBTargets, (lbCurSel _cLBTargets)] != GVAR(tgtIdx) && !GVAR(updating_lb)) then {" \n "		// Find listbox element with matching value" \n "		for ""_idx"" from 0 to (lbSize _cLBTargets) - 1 do {" \n "			if (_idx == (lbSize _cLBTargets)) exitWith {};" \n "			if (lbValue [_cLBTargets, _idx] == GVAR(tgtIdx)) exitWith {" \n "				lbSetCurSel [_cLBTargets, _idx];" \n "			};" \n "		};" \n "	};" \n "	" \n "	if (GVAR(OldNVGMethod)) then {" \n "		camUseNVG (if (GVAR(UseNVG) == 1) then {true} else {false});" \n "		setAperture (if (GVAR(UseNVG) == 1) then {4} else {-1});" \n "	} else {" \n "		setAperture (if (GVAR(UseNVG) == 1) then {0.07} else {-1});" \n "	};" \n "	" \n "	if (ctrlVisible _cMapFull) then {" \n "		GVAR(cam_fullmap) cameraEffect [""internal"", ""BACK""];" \n "	};" \n "	" \n "	if (GVAR(Tags) == 1 && !GVAR(MissileCamActive)) then {" \n "		// Update tag particlesources" \n "		if (time - _lastUpdateTags > 0.3) then {" \n "			_lastUpdateTags = time;" \n "			[""ToggleTags"", [true, (_cameras select GVAR(cameraIdx))]] call FUNC(spectate_events);" \n "		};" \n "	};" \n "	" \n "	if (!GVAR(NoMarkersUpdates)) then {" \n "		if (!GVAR(NeedUpdateLB)) then {" \n "			if (time > _nextmarkertime) then {" \n "				_rate = (round ((count GVAR(markers)) / 99)) max 1;" \n "				_nextmarkertime = time + _rate;" \n "				[GVAR(markers)] spawn FUNC(updatemarkers);" \n "			};" \n "		};" \n "	};" \n "	" \n "	// Follow target with small map" \n "	if (time >= _nextmaptime) then {" \n "		_nextmaptime = time + 0.2;" \n "		_map = (findDisplay 55001) displayCtrl _cMap;" \n "		if (GVAR(DroppedCamera)) then {" \n "			// Center on dropped camera position" \n "			ctrlMapAnimClear _map;" \n "			_map ctrlMapAnimAdd [0.19, GVAR(MinimapZoom), [_cxpos, _cypos, 0]];" \n "			ctrlMapAnimCommit _map;" \n "			if (!isNull GVAR(target)) then {(vehicle GVAR(target)) setVariable [QUOTE(GVAR(mapmove)), false]};" \n "		} else {" \n "			// Center on target" \n "			_mm = (vehicle GVAR(target)) getVariable QUOTE(GVAR(mapmove));" \n "			if (isNil ""_mm"") then {_mm = false};" \n "			if (speed vehicle GVAR(target) > 0 || !_mm) then {" \n "				ctrlMapAnimClear _map;" \n "				_map ctrlMapAnimAdd [(_nextmaptime - time - 0.01), GVAR(MinimapZoom), getPosASL GVAR(target)];" \n "				ctrlMapAnimCommit _map;" \n "				(vehicle GVAR(target)) setVariable [QUOTE(GVAR(mapmove)), true]" \n "			};" \n "		};" \n "	};" \n "	" \n "	// Check if target changed and center main map" \n "	if (GVAR(tgtIdx) != _lastTgt) then {" \n "		_map = (findDisplay 55001) displayCtrl _cMapFull;" \n "		ctrlMapAnimClear _map;" \n "		_lastTgt = GVAR(tgtIdx);" \n "		_map ctrlMapAnimAdd [0.2, 1.0, getPosASL (GVAR(deathCam) select _lastTgt)];" \n "		ctrlMapAnimCommit _map;" \n "	};" \n "	" \n "	if (!_rbuttonsvisible && time >= GVAR(showbuttonattime)) then {" \n "	// if (!_rbuttonsvisible) then {" \n "		// GVAR(RevButtons) = [""Respawn 1"",""Respawn 2"",""Respawn 3"",""Respawn 4""];" \n "		if (ctrlVisible _cMapFull) then {" \n "			ctrlShow [_cRButton1, false];" \n "			ctrlShow [_cRButton2, false];" \n "			ctrlShow [_cRButton3, false];" \n "			ctrlShow [_cRButton4, false];" \n "		};" \n "		if ((GVAR(RevButtons) select 0) != """") then {((findDisplay 55001) displayCtrl _cRButton1) ctrlSetText (GVAR(RevButtons) select 0);((findDisplay 55001) displayCtrl _cRButton1) ctrlSetPosition [(safeZoneX + safeZoneW) - 0.25, (safeZoneY + safeZoneH) - 0.6, 0.23, 0.104575];((findDisplay 55001) displayCtrl _cRButton1) ctrlCommit 0};" \n "		if ((GVAR(RevButtons) select 1) != """") then {((findDisplay 55001) displayCtrl _cRButton2) ctrlSetText (GVAR(RevButtons) select 1);((findDisplay 55001) displayCtrl _cRButton2) ctrlSetPosition [(safeZoneX + safeZoneW) - 0.25, (safeZoneY + safeZoneH) - 0.54, 0.23, 0.104575];((findDisplay 55001) displayCtrl _cRButton2) ctrlCommit 0};" \n "		if ((GVAR(RevButtons) select 2) != """") then {((findDisplay 55001) displayCtrl _cRButton3) ctrlSetText (GVAR(RevButtons) select 2);((findDisplay 55001) displayCtrl _cRButton3) ctrlSetPosition [(safeZoneX + safeZoneW) - 0.25, (safeZoneY + safeZoneH) - 0.48, 0.23, 0.104575];((findDisplay 55001) displayCtrl _cRButton3) ctrlCommit 0};" \n "		if ((GVAR(RevButtons) select 3) != """") then {((findDisplay 55001) displayCtrl _cRButton4) ctrlSetText (GVAR(RevButtons) select 3);((findDisplay 55001) displayCtrl _cRButton4) ctrlSetPosition [(safeZoneX + safeZoneW) - 0.25, (safeZoneY + safeZoneH) - 0.42, 0.23, 0.104575];((findDisplay 55001) displayCtrl _cRButton4) ctrlCommit 0};" \n "		_rbuttonsvisible = true;" \n "	};" \n "" \n "	// Get target properties" \n "	_dir = direction vehicle GVAR(target);" \n "	_bb = boundingBox vehicle GVAR(target);" \n "	//_h = ((_bb select 1) select 2) - ((_bb select 0) select 2); // Height" \n "	_foo = ((_bb select 1) select 2) - ((_bb select 0) select 2); // Height" \n "	_l = ((_bb select 1) select 1) - ((_bb select 0) select 1); // Length" \n "	_w = ((_bb select 1) select 0) - ((_bb select 0) select 0); // Width" \n "	" \n "	_hstr = 0.15;" \n "	_h = (_foo * _hstr) + (_h * (1 - _hstr));" \n "	" \n "	// Set UI texts" \n "	_role = """";" \n "	if (GVAR(DroppedCamera) && isNull _nearest) then {" \n "		// Dropped camera mode - no target" \n "		_name = """"; _role = """";" \n "	} else {" \n "		_vectar = vehicle GVAR(target);" \n "		if (_vectar != GVAR(target)) then {" \n "			_role = switch (GVAR(target)) do {" \n "				case (driver _vectar): {if (_vectar isKindOf ""Air"") then {_pilotstr} else {_driverstr}};" \n "				case (gunner _vectar): {_gunnerstr};" \n "				case (commander _vectar): {_commanderstr};" \n "				default {""""};" \n "			};" \n "		};" \n "		_name = GVAR(namecache) select GVAR(tgtIdx);" \n "	};" \n "	if (_name != _oldnname || _role != _oldnrole) then {" \n "		ctrlSetText [_cName, format [""%1 %2"", _name, _role]];" \n "		_oldnname = _name; _oldnrole = _role;" \n "	};" \n "	" \n "	if (GVAR(cameraIdx) != _oldcamselidx) then {" \n "		ctrlSetText [_cCamera, format[_selcamstr, _cameraNames select GVAR(cameraIdx)]];" \n "		_oldcamselidx = GVAR(cameraIdx);" \n "	};" \n "	" \n "	_camdir = round (direction (_cameras select GVAR(cameraIdx)));" \n "	ctrlSetText [_cRCompass, ""Dir: "" + str(_camdir)];" \n "	_dirmarker setMarkerDirLocal _camdir;" \n "	_dirmarker setMarkerPosLocal getPosASL (_cameras select GVAR(cameraIdx));" \n "	" \n "	// Set name color to gray if dropped cam" \n "	if (GVAR(DroppedCamera)) then {" \n "		((findDisplay 55001) displayCtrl _cName) ctrlSetTextColor [0.6, 0.6, 0.6, 1];" \n "		_hasdropped = true;" \n "	} else {" \n "		if (_hasdropped) then {" \n "			((findDisplay 55001) displayCtrl _cName) ctrlSetTextColor [1, 1, 1, 1];" \n "			_hasdropped = false;" \n "		};" \n "	};" \n "	" \n "	// Set toggle text color for camera menu" \n "	// only change it when it was really changed" \n "	if (_olduseMCam != GVAR(UseMissileCam)) then {" \n "		if (GVAR(UseMissileCam) == 1) then {lbSetColor [_cLBCameras, _cLbMissileCam, [1, 0.5, 0, 1]]}" \n "		else {lbSetColor [_cLBCameras, _cLbMissileCam, [1, 1, 1, 0.33]]};" \n "		_olduseMCam = GVAR(UseMissileCam);" \n "	};" \n "	" \n "	if (_oldUseNVG != GVAR(UseNVG)) then {" \n "		if (GVAR(UseNVG) == 1) then {lbSetColor [_cLBCameras, _cLbToggleNVG, [1, 0.5, 0, 1]]}" \n "		else {lbSetColor [_cLBCameras, _cLbToggleNVG, [1, 1, 1, 0.33]]};" \n "		_oldUseNVG = GVAR(UseNVG);" \n "	};" \n "	" \n "	if (_oldTags != GVAR(Tags)) then {" \n "		if (GVAR(Tags) == 1) then {lbSetColor [_cLBCameras, _cLbToggleTags, [1, 0.5, 0, 1]]} " \n "		else {lbSetColor [_cLBCameras, _cLbToggleTags, [1, 1, 1, 0.33]]};" \n "		_oldTags = GVAR(Tags);" \n "	};" \n "" \n "	if (_oldAIfilter != GVAR(AIfilter)) then {" \n "		if (GVAR(AIfilter) == 1) then {lbSetColor [_cLBCameras, _cLbToggleAiFilter, [1, 0.5, 0, 1]]} " \n "		else {lbSetColor [_cLBCameras, _cLbToggleAiFilter, [1, 1, 1, 0.33]]};" \n "		_oldAIfilter = GVAR(AIfilter);" \n "	};" \n "" \n "	if (_oldDeadFilter != GVAR(DeadFilter)) then {" \n "		if (GVAR(DeadFilter) == 1) then {lbSetColor [_cLBCameras, _cLbToggleDeadFilter, [1, 0.5, 0, 1]]} " \n "		else {lbSetColor [_cLBCameras, _cLbToggleDeadFilter, [1, 1, 1, 0.33]]};" \n "		_oldDeadFilter = GVAR(DeadFilter);" \n "	};" \n "	" \n "	if (GVAR(DroppedCamera)) then {" \n "		// Dropped free camera, moved with WSAD keys" \n "		if (GVAR(cameraIdx) != 0) then {" \n "			// User changed camera" \n "			GVAR(DroppedCamera) = false;" \n "		};" \n "		" \n "		// Adjust speed from buttons held down" \n "		if (GVAR(CamForward)) then {" \n "			_spd = (_sdistance max 1) * 20;" \n "			_spdbase = _spd * _tbase;" \n "			_cspeedx = _cspeedx + (_spdbase * sin _fangle);" \n "			_cspeedy = _cspeedy + (_spdbase * cos _fangle);" \n "		};" \n "		if (GVAR(CamBack)) then {" \n "			_spd = (_sdistance max 1) * 20;" \n "			_spdbase = -_spd * _tbase;" \n "			_cspeedx = _cspeedx + (_spdbase * sin _fangle);" \n "			_cspeedy = _cspeedy + (_spdbase * cos _fangle);" \n "		};		" \n "		if (GVAR(CamLeft)) then {" \n "			_spd = (_sdistance max 1) * 20;" \n "			_spdbase = _spd * _tbase;" \n "			_cspeedx = _cspeedx + (_spdbase * sin (_fangle - 90));" \n "			_cspeedy = _cspeedy + (_spdbase * cos (_fangle - 90));" \n "		};" \n "		if (GVAR(CamRight)) then {" \n "			_spd = (_sdistance max 1) * 20;" \n "			_spdbase = -_spd * _tbase;" \n "			_cspeedx = _cspeedx + (_spdbase * sin (_fangle - 90));" \n "			_cspeedy = _cspeedy + (_spdbase * cos (_fangle - 90));" \n "		};" \n "		// Move camera" \n "		_cxpos = _cxpos + (_cspeedx * _tbase);" \n "		_cypos = _cypos + (_cspeedy * _tbase);" \n "		_czpos = 0;" \n "		_h = 2; // Static camera height" \n "		_l = 2.2;" \n "		" \n "		// Slow down" \n "		_bstr = 5;" \n "		_tbasebstr = (1.0 - (_tbase * _bstr)) max 0;" \n "		_cspeedx = _cspeedx * _tbasebstr;" \n "		_cspeedy = _cspeedy * _tbasebstr;" \n "		" \n "		// Check for nearby targets" \n "		if (GVAR(dropped_check)) then {" \n "			_dummy setpos[_cxpos, _cypos, 1.5];" \n "			_objs = [_cxpos, _cypos, 1.5] nearObjects 10;" \n "			_nearest = objNull;" \n "			_dist = 10;" \n "			{" \n "				{" \n "					_d = _dummy distance _x;" \n "					if (_d < _dist && _x in GVAR(deathCam) && alive _x) then {_nearest = _x; _dist = _d};" \n "				} foreach crew _x;" \n "			} foreach _objs;" \n "			if (!isNull _nearest) then {" \n "				_nixx = GVAR(deathCam) find _nearest;" \n "				if (_nixx != -1) then {" \n "					GVAR(tgtIdx) = _nixx;" \n "				};" \n "			};" \n "		} else {" \n "			if (GVAR(mousecheckon)) then {" \n "				if (GVAR(MouseButtons) select 0) then {" \n "					_wpos = screenToWorld GVAR(MouseCoord);" \n "					_objs = _wpos nearObjects 10;" \n "					if (count _objs > 0) then {" \n "						_nearest = objNull;" \n "						_dist = 10;" \n "						{" \n "							{" \n "								_d = _wpos distance _x;" \n "								if (_d < _dist && _x in GVAR(deathCam) && alive _x) then {_nearest = _x; _dist = _d};" \n "							} foreach crew _x;" \n "						} foreach _objs;" \n "						if (!isNull _nearest) then {" \n "							_nixx = GVAR(deathCam) find _nearest;" \n "							if (_nixx != -1) then {" \n "								GVAR(tgtIdx) = _nixx;" \n "							};" \n "						};" \n "					};" \n "				};" \n "				if (_overlay_on) then {" \n "					_overlay_on = false;" \n "					((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlShow false;" \n "				};" \n "			} else {" \n "				_wpos = screenToWorld GVAR(MouseCoord);" \n "				_objs = _wpos nearObjects 10;" \n "				if (count _objs > 0) then {" \n "					_nearest = objNull;" \n "					_dist = 10;" \n "					{" \n "						{" \n "							_d = _wpos distance _x;" \n "							if (_d < _dist && _x in GVAR(deathCam) && alive _x) then {_nearest = _x; _dist = _d};" \n "						} foreach crew _x;" \n "					} foreach _objs;" \n "					if (!isNull _nearest) then {" \n "						_nname = name _nearest;" \n "						if (_nname != _olddropedname) then {" \n "							((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlSetText _nname;" \n "							((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlShow true;" \n "							_olddropedname = _nname;" \n "							_overlay_on = true;" \n "						};" \n "						((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlSetPosition [GVAR(MouseCoord) select 0, GVAR(MouseCoord) select 1, 0.4, 0.15];" \n "						((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlCommit 0;" \n "					} else {" \n "						if (_overlay_on) then {" \n "							_overlay_on = false;" \n "							((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlShow false;" \n "						};" \n "					};" \n "				} else {" \n "					if (_overlay_on) then {" \n "						_overlay_on = false;" \n "						((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlShow false;" \n "					};" \n "				};" \n "			};" \n "		};" \n "	} else {" \n "		if (_overlay_on) then {" \n "			_overlay_on = false;" \n "			((uiNamespace getVariable ""ACE_SpectRecogOverlay"") displayCtrl 1) ctrlShow false;" \n "		};" \n "		// Set targets for all cameras" \n "		_vpmtw = (vehicle GVAR(target) modelToWorld [0, 0, 0]);" \n "		_cxpos = _vpmtw select 0;" \n "		_cypos = _vpmtw select 1;" \n "		_czpos = _vpmtw select 2;" \n "	};" \n "	GVAR(cam_target) camSetPos [_cxpos, _cypos, _czpos + (_h * 0.7)];" \n "	GVAR(cam_static) camSetTarget GVAR(cam_target);" \n "	_gjp = [_cxpos, _cypos, _czpos + (_h * 0.6)];" \n "	GVAR(cam_free) camSetTarget _gjp;" \n "	GVAR(cam_flyby) camSetTarget GVAR(cam_target);" \n "	GVAR(cam_topdown) camSetTarget _gjp;" \n "	{_x camSetFov GVAR(szoom)} foreach _cameras;" \n "" \n "	// Static camera, follows unit from behind" \n "	_lsdist = -(_l * _sdistance);" \n "	GVAR(cam_static) camSetRelPos [sin _dir * _lsdist, cos _dir * _lsdist, 0.6 * abs _sdistance];" \n "	" \n "	// Free camera, user rotates camera around target" \n "	_lsdist = _l * (0.3 max _sdistance);" \n "	_d = -_lsdist;" \n "	_z = sin _fangleY * _lsdist;" \n "	_co = cos _fangleY;" \n "	GVAR(cam_free) camSetRelPos [(sin _fangle * _d) * _co, (cos _fangle * _d) * _co, _z];" \n "	GVAR(cam_free) camCommit 0;" \n "	" \n "	// Flyby camera, no user control except zoom" \n "	if (GVAR(target) distance GVAR(cam_flyby) > (_flybydst * 1.1)) then {" \n "		_flybydst = 20 + (speed vehicle GVAR(target));" \n "		GVAR(cam_flyby) camSetRelPos [sin _dir * _flybydst, cos _dir * _flybydst, 1 + ((random _h) * 1.5)];" \n "		GVAR(cam_flyby) camCommit 0;" \n "		GVAR(cam_target) camCommit 0;" \n "	};" \n "	" \n "	// Top-down camera" \n "	GVAR(cam_topdown) camSetRelPos [0.0, -0.01, 2 + ((0 max _sdistance) * 15)];" \n "	GVAR(cam_topdown) camCommit 0;" \n "" \n "	// Commit static and flyby cameras" \n "	  // 0 = Jump immediately to distant target" \n "	_comSpeed = if ((vehicle GVAR(target)) distance GVAR(cam_static) > 650) then {0} else {(1.0 - ((speed vehicle GVAR(target)) / 70)) max 0.0};" \n "	GVAR(cam_static) camCommit _comSpeed / 2;" \n "	GVAR(cam_target) camCommit _comSpeed / 3;" \n "	GVAR(cam_flyby) camCommit _comSpeed;" \n "	" \n "	// Wait a moment. 150fps ought to be enough for everyone :-)" \n "	_tt = time;" \n "	//_timeend = _tt + 0.0034;" \n "	_timeend = _tt + 0.01;" \n "	_tbase = time - _tt;" \n "	// a little helper if you might want to exit spectating during a mission again" \n "	// just set ace_sys_spectator_exit_spectator = true and spectating will exit safely" \n "	if (!isNil QUOTE(GVAR(exit_spectator))) then {_ret = true};" \n "	if (!isNil ""ace_wounds_prevtime"" && !alive player) then {GVAR(exit_spectator) = true;_ret = true};" \n "} else {" \n "	if (!dialog) then {_ret = true};" \n "};" \n "" \n "_ret";
+			};
+		};
+	};
+	class Item3
+	{
+		Flags=218;
+		BasicText="";
+		Left=-50;
+		Top=0;
+		Right=50;
+		Bottom=50;
+		BgColor=8421440;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=8;
+			class ItemInfo
+			{
+				Id=3;
+			};
+		};
+	};
+	class Item4
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=225;
+		Right=50;
+		Bottom=275;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="Init2";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=4;
+				InitCode="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "_seagull = ""noWait"";" \n "" \n "// Globals etc." \n "if (isNil QUOTE(GVAR(OldNVGMethod))) then {GVAR(OldNVGMethod) = false};" \n "GVAR(Spect_Init) = false;" \n "GVAR(target) = objNull; " \n "GVAR(MouseButtons) = [false, false];" \n "GVAR(MouseScroll) = 0;" \n "GVAR(MouseCoord) = [0.5, 0.5];" \n "GVAR(UseNVG) = 0;" \n "_oldUseNVG = 0;" \n "GVAR(MissileCamActive) = false;" \n "GVAR(UseMissileCam) = 1;" \n "_olduseMCam = 1;" \n "GVAR(MarkerNames) = false; // True = display marker names and arrows" \n "GVAR(MarkerType) = 1; // 0 = disabled, 1 = names, 2 = types" \n "GVAR(Tags) = 0; // Particlesource tags" \n "_oldTags = 0;" \n "GVAR(AIfilter) = 0; // Filter AI units (only players displayed)" \n "_oldAIfilter = 0;" \n "GVAR(DeadFilter) = if (GVAR(RemoveDeadFilter)) then {1} else {0}; // Filter Unknown Dead units (only Alive players displayed)" \n "_oldDeadFilter = 0;" \n "GVAR(MarkerSize) = 1.0; // Full map marker size" \n "GVAR(MinimapZoom) = 0.5; // Minimap zoom" \n "GVAR(1stGunner) = false; // Gunner view on 1st person camera?" \n "GVAR(DroppedCamera) = false; // Free camera dropped (non-targeted with free motion)?" \n "GVAR(CamForward) = false;" \n "GVAR(CamBack) = false;" \n "GVAR(CamLeft) = false;" \n "GVAR(CamRight) = false;" \n "GVAR(NeedUpdateLB) = false;" \n "GVAR(exitspect) = false;" \n "GVAR(gfleader) = false;" \n "GVAR(units) = [];" \n "GVAR(MissileCamOver) = false;" \n "GVAR(markersrun) = false;" \n "GVAR(sdistance) = 1; // camera distance" \n "GVAR(fangle)  = 0; // Free camera angle" \n "GVAR(fangleY) = 15;" \n "_flybydst = 35; // Distance of flyby camera (adjusted based on target speed)" \n "GVAR(szoom) = 0.976;" \n "GVAR(markers) = []; // Map markers showing positions of all units" \n "GVAR(Tagsources) = []; // Particle sources for tags" \n "_lastTgt = -1;" \n "" \n "GVAR(mouseDeltaPos) = [0, 0];" \n "" \n "GVAR(mousecheckon) = false;" \n "GVAR(newCheckUn) = false;" \n "GVAR(updating_lb) = false;" \n "" \n "_oldtarget = objNull;" \n "_hasdropped = true;" \n "" \n "_oldnname = """";" \n "_oldnrole = """";" \n "_oldcamselidx = -1000;" \n "_oldCameraIdx = -123;" \n "" \n "_deadstr = (localize ""STR_ACE_SPECT_DEAD"") + "" "";" \n "_unknownstr = localize ""STR_ACE_SPECT_UNKNOWN"";" \n "_name = _unknownstr;" \n "_pilotstr = localize ""STR_ACE_SPECT_PILOT"";" \n "_driverstr = localize ""STR_ACE_SPECT_DRIVER"";" \n "_gunnerstr = localize ""STR_ACE_SPECT_GUNNER"";" \n "_commanderstr = localize ""STR_ACE_SPECT_COMMANDER"";" \n "_selcamstr = localize ""STR_ACE_SPECT_SELCAM"";" \n "" \n "_clbcols = [[1, 0.5, 0, 1], [0.8, 0.8, 1, 1], [1, 0.8, 0.8, 1], [0.8, 1, 0.8, 1], [1, 1, 1, 1], [0.5, 0.5, 0.5, 1]];" \n "_markstr = ""ace_sys_spect_Marker%1"";" \n "" \n "GVAR(deathCam) = [];" \n "GVAR(ehVehicles) = []; // Used to keep track of added eventhandlers" \n "" \n "if (typeName _seagull != ""string"") then {" \n "	sleep 1;" \n "	titleCut ["""", ""BLACK IN"", 8];" \n "} else {" \n "	titleText["""", ""BLACK IN"", 0];" \n "};" \n "" \n "// Create dialog & assign keyboard handler" \n "createDialog ""ACE_rscSpectate"";" \n "(findDisplay 55001) displaySetEventHandler [""KeyDown"", ""[""""KeyDown"""", _this] call ace_sys_spectator_fnc_spectate_events""];" \n "(findDisplay 55001) displaySetEventHandler [""KeyUp"", ""[""""KeyUp"""", _this] call ace_sys_spectator_fnc_spectate_events""];" \n "" \n "((findDisplay 55001) displayCtrl 55012) ctrlSetStructuredText parseText (""Spectating Script v1.03 by Kegetys<br/><br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN1"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN2"") + ""<br/><br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN3"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN4"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN5"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN6"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN7"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN8"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN9"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN10"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN11"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN12"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN13"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN14"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN15"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN16"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN17"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN18"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN19"") + ""<br/><br/>"" + (localize ""STR_ACE_SPECT_HELPN20"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN21"") + ""<br/>"" + (localize ""STR_ACE_SPECT_HELPN22"") + ""<br/>"" +" \n "	(localize ""STR_ACE_SPECT_HELPN23"") + ""<br/><br/>Improvement modifications by Dwarden, Vipermaul and norrin<br/>Complete rewrite for ACE by Xeno<br/>"");" \n "// Hide menus by default" \n "[""ToggleCameraMenu"", 0] call FUNC(spectate_events);" \n "[""ToggleTargetMenu"", 0] call FUNC(spectate_events);" \n "[""ToggleHelp"", 0] call FUNC(spectate_events);" \n "[""ToggleMap"", 1] call FUNC(spectate_events);" \n "" \n "// IDC's from rsc" \n "_cCamera = 55002;" \n "_cTarget = 55003;" \n "_cName = 55004;" \n "_cLBCameras = 55005;" \n "_cLBTargets = 55006;" \n "_cMap = 55013;" \n "_cMapFull = 55014;" \n "_cRButton1 = 50018;" \n "_cRButton2 = 50019;" \n "_cRButton3 = 50020;" \n "_cRButton4 = 50021;" \n "_cRCompass = 50023;" \n "_nearest = objNull;" \n "_rbuttonsvisible = false;" \n "" \n "GVAR(namecache) = [];" \n "GVAR(sidecache) = [];" \n "" \n "// Create cameras" \n "_pos = [(player modelToWorld [0, 0, 0] select 0) - 1 + random 2, (player modelToWorld [0, 0, 0] select 1) - 1 + random 2, 2];" \n "GVAR(cam_static) = ""camera"" camCreate _pos;" \n "GVAR(cam_target) = ""camera"" camCreate _pos; // ""Dummy"" target camera for smooth transitions" \n "GVAR(cam_free) = ""camera"" camCreate _pos;" \n "GVAR(cam_flyby) = ""camera"" camCreate _pos;" \n "GVAR(cam_topdown) = ""camera"" camCreate _pos;" \n "GVAR(cam_1stperson) = ""camera"" camCreate _pos; // Dummy camera" \n "GVAR(cam_missile) = ""camera"" camCreate _pos; // Missile camera" \n "GVAR(cam_fullmap) = ""camera"" camCreate _pos; // Full map view camera" \n "_cameras = [GVAR(cam_free), GVAR(cam_static), GVAR(cam_flyby), GVAR(cam_topdown), GVAR(cam_1stperson)];" \n "_cameraNames = [localize ""STR_ACE_SPECT_CAMFREE"", localize ""STR_ACE_SPECT_CAMCHASE"", localize ""STR_ACE_SPECT_CAMFLYBY"", localize ""STR_ACE_SPECT_CAMFTOPDOWN"", localize ""STR_ACE_SPECT_CAMFIRST""];" \n "_dummy = ""HeliHEmpty"" createVehicleLocal [0, 0, 0]; // Dummy object for distance command" \n "GVAR(cameras) = _cameras; // Hack to allow access from events.sqf" \n "" \n "// Add cameras to listbox" \n "lbClear _cLBCameras;" \n "{lbAdd [_cLBCameras, _x]} foreach _cameraNames;" \n "" \n "// Add separator & toggles" \n "_cLbSeparator = lbAdd [_cLBCameras, ""---""];" \n "lbSetColor [_cLBCameras, _cLbSeparator, [0.5, 0.5, 0.5, 0.5]];" \n "_cLbMissileCam = lbAdd [_cLBCameras, localize ""STR_ACE_SPECT_CAMMISSILE""];" \n "_cLbToggleNVG = lbAdd [_cLBCameras, localize ""STR_ACE_SPECT_CAMNIGHTV""];" \n "_cLbToggleTags = lbAdd [_cLBCameras, localize ""STR_ACE_SPECT_CAMUNITTAGS""];" \n "_cLbToggleAiFilter = lbAdd [_cLBCameras, localize ""STR_ACE_SPECT_CAMFILTERAI""];" \n "_cLbToggleDeadFilter = lbAdd [_cLBCameras, localize ""STR_ACE_SPECT_CAMFILTERDEAD""];" \n "" \n "lbSetColor [_cLBCameras, _cLbMissileCam, [1, 0.5, 0, 1]];" \n "lbSetColor [_cLBCameras, _cLbToggleNVG, [1, 1, 1, 0.33]];" \n "lbSetColor [_cLBCameras, _cLbToggleTags, [1, 1, 1, 0.33]];" \n "lbSetColor [_cLBCameras, _cLbToggleAiFilter, [1, 1, 1, 0.33]];" \n "lbSetColor [_cLBCameras, _cLbToggleDeadFilter, [1, 1, 1, 0.33]];" \n "" \n "GVAR(tgtIdx) = 0;" \n "GVAR(cameraIdx) = 0;" \n "GVAR(NewCameraIdx) = 0;" \n "showcinemaborder false;" \n "lbClear _cLBTargets;" \n "onMapSingleClick ""['MapClick', _pos] call ace_sys_spectator_fnc_spectate_events"";" \n "" \n "if (GVAR(UseLog)) then {[""EventLogAdd"", [""Initialize"", [1, 1, 1, 1]]] call FUNC(spectate_events)};" \n "" \n "// Spawn thread to display help reminder after a few seconds" \n "[] spawn {" \n "	sleep 3;" \n "	if (dialog) then {" \n "		if (!GVAR(can_exit_spectator)) then {" \n "			cutText[(localize ""STR_ACE_SPECT_F1HELP""), ""PLAIN DOWN"", 0.75];" \n "		} else {" \n "			cutText[(localize ""STR_ACE_SPECT_F1HELP2""), ""PLAIN DOWN"", 0.75];" \n "		};" \n "	};" \n "};" \n "" \n "GVAR(camSelLast) = 0;" \n "_tgtSelLast = -1;" \n "GVAR(mouseLastX) = 0.5;" \n "GVAR(mouseLastY) = 0.5;" \n "_nNoDialog = 0;" \n "GVAR(lastCheckNewUnits) = -100;" \n "_nextmarkertime = time + 3;" \n "_nextmaptime = -100;" \n "_lastUpdateTags = -100;" \n "GVAR(lastAutoUpdateLB) = time;" \n "_lasttgtIdx = 0;" \n "GVAR(CamPos) = [0, 0, 0];" \n "_cxpos = 0;" \n "_cypos = 0;" \n "_czpos = 0;" \n "_cspeedx = 0;" \n "_cspeedy = 0;" \n "_tbase = 0.1;" \n "_h = 2;" \n "" \n "disableSerialization;" \n "private [""_olddropedname"",""_overlay_on""];" \n "_olddropedname = """";" \n "_overlay_on = false;" \n "10009 cutRsc[""ACE_SpectRecogOverlay"",""PLAIN""];" \n "((findDisplay 135943) displayCtrl 1) ctrlShow false;" \n "((findDisplay 135943) displayCtrl 1) ctrlCommit 0;" \n "" \n "_dirmarker = createMarkerLocal [QUOTE(GVAR(sdir_marker)), [0, 0, 0]];" \n "_dirmarker setMarkerTypeLocal ""mil_arrow2"";" \n "_dirmarker setMarkerSizeLocal [0.3, 0.3];" \n "_dirmarker setMarkerColorLocal ""ColorBlack"";" \n "_dirmarker setMarkerTextLocal ""Camera"";" \n "" \n "// Initialize the arrays" \n "startLoadingScreen [(localize ""STR_ACE_SPECT_SPECINIT"") +  "" Spectator Script...""];" \n "GVAR(lastCheckNewUnits) = time;" \n "" \n "//player setVariable [""BIS_IS_inAgony"",false];" \n "" \n "// Avoid game logics" \n "_allUnits = if (GVAR(playable_only)) then {if (isMultiplayer) then {playableUnits} else {switchableUnits}} else {allUnits};" \n "_allVehicles = vehicles;" \n "if (count _allVehicles > 0) then {" \n "	// Add event handlers to new vehicles" \n "	GVAR(ehVehicles) = _allVehicles;" \n "	{" \n "		// Add fired eventhandler for map indication" \n "		_nn = _x getVariable QUOTE(GVAR(EHFired));" \n "		if (isNil ""_nn"") then {" \n "			_fh = _x addEventHandler [""fired"", {[""UnitFired"",_this] call FUNC(spectate_events)}];" \n "			_x setVariable [QUOTE(GVAR(EHFired)), _fh];" \n "			_x setVariable [QUOTE(GVAR(mapmove)), false];" \n "		};" \n "	} foreach _allVehicles;" \n "};" \n "if (count _allUnits > 0) then {" \n "	{" \n "		_gg = _x getVariable QUOTE(GVAR(SPECT));" \n "		if (isNil ""_gg"") then {_gg = false};" \n "		if (!_gg) then {" \n "			// If variable not found, set it, thus unit is tagged for next update cycle" \n "			// This way, (re)spawned units have some time to fully initialize. Name arma.rpt Error fix." \n "			_x setVariable [QUOTE(GVAR(SPECT)), true];" \n "			_x setVariable [QUOTE(GVAR(mapmove)), false];" \n "		};" \n "		" \n "		if (!isMultiplayer && GVAR(UseLog)) then {" \n "			_nn = _x getVariable QUOTE(GVAR(EHKilled));" \n "			if (isNil ""_nn"") then {" \n "				_fh = _x addEventHandler [""killed"", {[""UnitKilled"",_this] call FUNC(spectate_events)}];" \n "				_x setVariable [QUOTE(GVAR(EHKilled)), _fh];" \n "			};" \n "		};" \n "		" \n "		_m = createMarkerLocal [format[_markstr, count GVAR(markers)], [0, 0, 0]];" \n "		_m setMarkerTypeLocal ""Dot"";" \n "		_m setMarkerSizeLocal [0.4, 0.4];" \n "		_nn = if (alive _x) then {name _x} else {_unknownstr};" \n "		GVAR(markers) set [count GVAR(markers), [_m, _x, _nn]];" \n "		" \n "		_OriginalSide = _x call FUNC(CheckOriginalSide);" \n "		GVAR(sidecache) set [count GVAR(sidecache), _OriginalSide];" \n "		" \n "		// Set marker color" \n "		_m setMarkerColorLocal (_OriginalSide call FUNC(GetMCol));" \n "		_m setMarkerPosLocal (getPosASL (vehicle _x));" \n "		" \n "		// Create particle source" \n "		_s = ""#particlesource"" createVehicleLocal getPosASL _x;" \n "		GVAR(Tagsources) set [count GVAR(Tagsources), [_x, _s]];" \n "		" \n "		// If tags are on, turn them off and back again to include new units" \n "		if (GVAR(Tags) == 1) then {" \n "			[""ToggleTags"",[false, (_cameras select GVAR(cameraIdx))]] call FUNC(spectate_events);" \n "			[""ToggleTags"",[true, (_cameras select GVAR(cameraIdx))]] call FUNC(spectate_events);" \n "		};" \n "		GVAR(namecache) set [count GVAR(namecache), _nn];" \n "	} forEach _allUnits;" \n "	" \n "	// Add new units to end of list" \n "	GVAR(deathCam) = _allUnits;" \n "	" \n "	// Request listbox update" \n "	GVAR(NeedUpdateLB) = true;" \n "};" \n "endLoadingScreen;" \n "" \n "" \n "if (!isNil ""ace_wounds_prevtime"") then {if (ace_wounds_prevtime > 0) then {if (isNil ""ace_wounds_no_prevtime"") then {ace_wounds_no_prevtime = false}}};" \n "_strlt = ""Life time: %1"";" \n "" \n "_timeend = -1;" \n "_ret = false;";
+			};
+		};
+	};
+	class Item5
+	{
+		Flags=218;
+		BasicText="";
+		Left=-175;
+		Top=-75;
+		Right=-75;
+		Bottom=-25;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="!isNil ""ace_sys_spectator_SPECTATINGON""";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=5;
+				Priority=1;
+				Condition="!isNil ""ace_sys_spectator_SPECTATINGON""";
+			};
+		};
+	};
+	class Item6
+	{
+		Flags=250;
+		BasicText="";
+		Left=-300;
+		Top=-75;
+		Right=-200;
+		Bottom=-25;
+		BgColor=33023;
+		class ItemInfo
+		{
+			Text="End";
+			lStyle=-842150451;
+			Shape=6;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=700;
+			FontCharSet=0;
+			ItemType=1;
+			class ItemInfo
+			{
+				Id=6;
+			};
+		};
+	};
+	class Item7
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=375;
+		Right=50;
+		Bottom=425;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="End1";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=7;
+				InitCode="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "10009 cutRsc[""Default"",""PLAIN""];" \n "" \n "// Dialog closed with esc key" \n "titleText ["""", ""BLACK IN"", 0.5];" \n "" \n "// Destroy cameras, markers, particlesources, etc." \n "{camDestroy _x} foreach _cameras;" \n "camDestroy GVAR(cam_target);" \n "camDestroy GVAR(cam_missile);" \n "camDestroy GVAR(cam_fullmap);" \n "deletevehicle GVAR(cam_target);" \n "deletevehicle GVAR(cam_missile);" \n "deletevehicle GVAR(cam_fullmap);" \n "GVAR(exitspect) = true;" \n "_timeend = time + 0.01;";
+			};
+		};
+	};
+	class Item8
+	{
+		Flags=218;
+		BasicText="";
+		Left=-50;
+		Top=450;
+		Right=50;
+		Bottom=500;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Wait";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=8;
+				Condition="time >= _timeend";
+			};
+		};
+	};
+	class Item9
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=525;
+		Right=50;
+		Bottom=575;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=9;
+				InitCode="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "{deleteMarkerLocal (_x select 0)} foreach GVAR(markers);" \n "// camUseNVG false;" \n "if (GVAR(UseNVG) == 1) then {setAperture -1};" \n "onMapSingleClick """";" \n "{deletevehicle (_x select 1)} foreach GVAR(Tagsources);" \n "deleteVehicle _dummy;" \n "" \n "{" \n "	if (!isNull _x) then {" \n "		_fh = _x getVariable QUOTE(GVAR(EHFired));" \n "		if (!isNil ""_fh"") then {_x removeEventHandler[""fired"", _fh]};" \n "		_x setVariable [QUOTE(GVAR(EHFired)), nil];" \n "	};" \n "} foreach GVAR(ehVehicles);" \n "" \n "{" \n "	if (!isNull _x) then {" \n "		(vehicle _x) setVariable [QUOTE(GVAR(mapmove)), nil];" \n "		if (!isMultiplayer && GVAR(UseLog)) then {" \n "			_fh = _x getVariable QUOTE(GVAR(EHKilled));" \n "			if (!isNil ""_fh"") then {_x removeEventHandler[""killed"", _fh]};" \n "		};" \n "	};" \n "} forEach GVAR(deathCam);" \n "" \n "// a little helper if you might want to exit spectating during a mission again" \n "// just set ace_sys_spectator_exit_spectator = true and spectating will exit safely" \n "_doexitx = false;" \n "if (!isNil QUOTE(GVAR(exit_spectator))) then {" \n "	deleteMarkerLocal _dirmarker;" \n "	player switchCamera ""INTERNAL"";" \n "	player cameraEffect[""terminate"", ""FRONT""];" \n "	closeDialog 0;" \n "	_doexitx = true;" \n "	GVAR(showbuttonattime) = nil;" \n "};" \n "" \n "// cleanup" \n "GVAR(deathCam) = nil;" \n "GVAR(units) = nil;" \n "GVAR(namecache) = nil;" \n "GVAR(sidecache) = nil;" \n "GVAR(MouseButtons) = nil;" \n "GVAR(MouseCoord) = nil;" \n "GVAR(units) = nil;" \n "GVAR(markers) = nil;" \n "GVAR(Tagsources) = nil;" \n "GVAR(mouseDeltaPos) = nil;" \n "GVAR(ehVehicles) = nil;" \n "GVAR(SEUI) = nil;" \n "" \n "GVAR(exit_spectator) = nil;" \n "" \n "";
+			};
+		};
+	};
+	class Item10
+	{
+		Flags=218;
+		BasicText="";
+		Left=-200;
+		Top=525;
+		Right=-100;
+		Bottom=575;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="ace_sys_spectator_no_butterfly_mode";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=10;
+				Priority=1;
+				Condition="ace_sys_spectator_no_butterfly_mode";
+			};
+		};
+	};
+	class Item11
+	{
+		Flags=250;
+		BasicText="";
+		Left=-325;
+		Top=525;
+		Right=-225;
+		Bottom=575;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=11;
+				InitCode="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "deleteMarkerLocal _dirmarker;" \n "// give some time to press Esc to exit the game" \n "titleText ["""", ""BLACK OUT"", 0.2];" \n "player switchCamera ""INTERNAL"";" \n "player cameraEffect[""terminate"", ""FRONT""];" \n "_timeend = time + 2;" \n "" \n "";
+			};
+		};
+	};
+	class Item12
+	{
+		Flags=218;
+		BasicText="";
+		Left=-50;
+		Top=600;
+		Right=50;
+		Bottom=650;
+		BgColor=8421440;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=8;
+			class ItemInfo
+			{
+				Id=12;
+			};
+		};
+	};
+	class Item13
+	{
+		Flags=218;
+		BasicText="";
+		Left=-450;
+		Top=525;
+		Right=-350;
+		Bottom=575;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="Sleep 2 s";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=13;
+				Condition="time >= _timeend";
+			};
+		};
+	};
+	class Item14
+	{
+		Flags=250;
+		BasicText="";
+		Left=-600;
+		Top=525;
+		Right=-500;
+		Bottom=575;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=14;
+				InitCode="#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "titleText ["""", ""BLACK IN"", 0.2];" \n "GVAR(SPECTATINGON) = nil;" \n "[] spawn {sleep 0.01; call ace_sys_spectator_fnc_startSpectator};";
+			};
+		};
+	};
+	class Item15
+	{
+		Flags=218;
+		BasicText="";
+		Left=-600;
+		Top=-75;
+		Right=-500;
+		Bottom=-25;
+		BgColor=8421440;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=8;
+			class ItemInfo
+			{
+				Id=15;
+			};
+		};
+	};
+	class Item16
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=675;
+		Right=50;
+		Bottom=725;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=16;
+				InitCode="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "// Create a butterfly for player to fly with" \n "_bpos = [(((vehicle GVAR(target))modelToWorld [0, 0, 0]) select 0) - 5 + random 10, (((vehicle GVAR(target)) modelToWorld [0, 0, 0]) select 1) - 5 + random 10, 1];" \n "_bird = ""ACE_ButterFlySpectator"" createVehiclelocal _bpos; " \n "_bird setVelocity [0, 0, 5];" \n "_bird setPos _bpos;" \n "_bird switchCamera ""INTERNAL"";" \n "_bird cameraEffect [""terminate"", ""FRONT""];" \n "_bird camCommand ""manual on"";" \n "" \n "GVAR(Bird) = _bird;" \n "onMapSingleClick ""ace_sys_spectator_Bird setpos [_pos select 0, _pos select 1, 2];ace_sys_spectator_Bird setvelocity[0, 0, 5];if (dialog) then {closeDialog 0}"";" \n "" \n "cutText [localize ""STR_ACE_SPECT_LANDGROUND"", ""PLAIN DOWN"", 0.75];" \n "" \n "// faking map here as workaround, butterflies don't have a map so we add a dialog with a map" \n "GVAR(birdkeyDownEHId) = (findDisplay 46) displayAddEventHandler [""KeyDown"", """ \n "	_ret = false;" \n "	if ((_this select 1) in ([50] + (actionKeys 'ShowMap') + (actionKeys 'HideMap'))) then {" \n "		['ToggleMapBird', 0] call ace_sys_spectator_fnc_spectate_events;" \n "		_ret = true;" \n "	};" \n "	_ret" \n """];" \n "" \n "_dirmarker setMarkerTextLocal ""Bird Camera"";" \n "_dirmarker spawn {" \n "	_dirmarker = _this;" \n "	while {!isNull GVAR(Bird)} do {" \n "		_dirmarker setMarkerPosLocal getPosASL GVAR(Bird);" \n "		_dirmarker setMarkerDirLocal direction GVAR(Bird);" \n "		sleep 0.1;" \n "	};" \n "};" \n "" \n "// Wait until landed, delete bird & restart script";
+			};
+		};
+	};
+	class Item17
+	{
+		Flags=218;
+		BasicText="";
+		Left=-50;
+		Top=950;
+		Right=50;
+		Bottom=1000;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=17;
+				Condition="time >= _timeend";
+			};
+		};
+	};
+	class Item18
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=75;
+		Right=50;
+		Bottom=125;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="Init1";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=18;
+				InitCode="#define GVAR(var1) ace_sys_spectator_##var1" \n "#define QUOTE(quote1) #quote1" \n "#define FUNC(func1) ace_sys_spectator_fnc_##func1" \n "" \n "GVAR(SPECTATINGON) = true;" \n "" \n "disableSerialization;" \n "" \n "private [""_player"", ""_killer"", ""_seagull"", ""_ret"", ""_timeend""];" \n "_player = _this select 0;" \n "_killer = _this select 1;" \n "_seagull = _this select 2;" \n "" \n "if ( isNil ""_seagull"" )  then  {_seagull = ""noWait""};" \n "" \n "private [""_factor"", ""_i"", ""_oldUseNVG"", ""_olduseMCam"", ""_oldTags"", ""_oldAIfilter"", ""_oldDeadFilter"", ""_flybydst"", ""_lastTgt"", ""_oldtarget"", ""_hasdropped"", ""_oldnname"", ""_oldnrole"", ""_oldcamselidx"", ""_oldCameraIdx"", ""_deadstr"", ""_unknownstr"", ""_name"", ""_pilotstr"", ""_driverstr"", ""_gunnerstr"", ""_commanderstr"", ""_selcamstr"", ""_clbcols"", ""_markstr"", ""_kdowneh"", ""_kupeh"", ""_cCamera"", ""_cTarget"", ""_cName"", ""_cLBCameras"", ""_cLBTargets"", ""_cMap"", ""_cMapFull"", ""_cRButton1"", ""_cRButton2"", ""_cRButton3"", ""_cRButton4"", ""_nearest"", ""_rbuttonsvisible"", ""_pos"", ""_cameras"", ""_cameraNames"", ""_dummy"", ""_cLbSeparator"", ""_cLbMissileCam"", ""_cLbToggleNVG"", ""_cLbToggleTags"", ""_cLbToggleAiFilter"", ""_cLbToggleDeadFilter"", ""_tgtSelLast"", ""_nNoDialog"", ""_nextmarkertime"", ""_nextmaptime"", ""_lastUpdateTags"", ""_lasttgtIdx"", ""_cxpos"", ""_cypos"", ""_czpos"", ""_cspeedx"", ""_cspeedy"", ""_tbase"", ""_h"", ""_allUnits"", ""_allVehicles"", ""_nn"", ""_fh"", ""_gg"", ""_m"", ""_OriginalSide"", ""_s"", ""_strlifet"", ""_fangle"", ""_fangleY"", ""_sdistance"", ""_acer"", ""_strlt"", ""_llbsize"", ""_idx"", ""_ot"", ""_oside"", ""_coldidx"", ""_rate"", ""_map"", ""_mm"", ""_dir"", ""_bb"", ""_foo"", ""_l"", ""_w"", ""_hstr"", ""_role"", ""_vectar"", ""_spd"", ""_spdbase"", ""_bstr"", ""_tbasebstr"", ""_objs"", ""_dist"", ""_d"", ""_vpmtw"", ""_gjp"", ""_lsdist"", ""_z"", ""_co"", ""_comSpeed"", ""_tt"", ""_t"", ""_doexitx"", ""_bpos"", ""_bird"", ""_ret""];" \n "" \n "// safety check to wait for a still running spectator script" \n "if (!isNil QUOTE(GVAR(exit_spectator))) then {waitUntil {isNil ""ace_sys_spectator_exit_spectator""}};" \n "" \n "// ace_sys_spectator_can_exit_spectator = true, the player can exit spectating with the X key" \n "if (isNil QUOTE(GVAR(can_exit_spectator))) then {GVAR(can_exit_spectator) = false};" \n "// ace_sys_spectator_playable_only = true, only playable (MP) or switchableUnits (SP) units will be shown in the target listbox" \n "if (isNil QUOTE(GVAR(playable_only))) then {GVAR(playable_only) = false};" \n "// ace_sys_spectator_no_butterfly_mode = true, if a player presses Esc he won't switch to butterfly mode but the spectating dialog gets restarted after a second" \n "if (isNil QUOTE(GVAR(no_butterfly_mode))) then {GVAR(no_seagull_mode) = false;GVAR(no_butterfly_mode) = false};" \n "// markers are enabled as default, set ace_sys_spectator_NoMarkersUpdates to true to completely disable marker updates" \n "if (isNil QUOTE(GVAR(NoMarkersUpdates))) then {GVAR(NoMarkersUpdates) = false};" \n "// if GVAR(UseLog) is set to true, spctator messages are written to group chat and RPT" \n "// in Singleplayer killed messages are logged too" \n "if (isNil QUOTE(GVAR(UseLog))) then {GVAR(UseLog) = false};" \n "// do also check if a unit is unconscious and don't add it to the target list, ace_sys_spectator_CheckUncon = true" \n "if (isNil QUOTE(GVAR(CheckUncon))) then {GVAR(CheckUncon) = false};" \n "// display only units in the target list that are max ace_sys_spectator_CheckDist meters away, -1 = no check" \n "if (isNil QUOTE(GVAR(CheckDist))) then {GVAR(CheckDist) = -1};" \n "// if ace_sys_spectator_RemoveDeadFilter = true dead units will allways get removed from the target listbox, doesn't matter if you change it during spectating" \n "if (isNil QUOTE(GVAR(RemoveDeadFilter))) then {GVAR(RemoveDeadFilter) = false};" \n "// do also check if a unit is captive" \n "if (isNil QUOTE(GVAR(CheckCaptive))) then {GVAR(CheckCaptive) = false};" \n "" \n "// if ace_sys_spectator_dropped_check is set to false no nearby target gets acquired" \n "if (isNil QUOTE(GVAR(dropped_check))) then {GVAR(dropped_check) = false};" \n "" \n " // ace_sys_spectator_RevShowButtonTime = 300 will show some buttons that you can assign actions to after 5 minutes (300 seconds)" \n " if (isNil QUOTE(GVAR(showbuttonattime))) then {" \n "	_factor = if (isNil QUOTE(GVAR(RevShowButtonTime))) then {99999999999} else {GVAR(RevShowButtonTime)};" \n "	GVAR(showbuttonattime) = time + _factor;" \n "};" \n "" \n "// if you add text to the array it will show the corresponding button" \n "// for example, ace_sys_spectator_RevButtons = [""Respawn 1"", ""Respawn 2"", """", """"];" \n "// will only show button 1 and 2 with" \n "// You don't have to make an array with four elements, it will get filled automatically" \n "// default no buttons visible" \n "if (isNil QUOTE(GVAR(RevButtons))) then {GVAR(RevButtons) = ["""","""","""",""""]};" \n "if (count GVAR(RevButtons) < 4) then {" \n "	for ""_i"" from (count GVAR(RevButtons) - 1) to 3 do {GVAR(RevButtons) set [count GVAR(RevButtons), """"]};" \n "};" \n "" \n "// Unit sides shown - Show all if sides not set" \n "// example: ace_sys_spectator_ShownSides = [west];" \n "if (isNil QUOTE(GVAR(ShownSides))) then {" \n "	GVAR(ShownSides) = [west, east, resistance, civilian];" \n "} else {" \n "	if (count GVAR(ShownSides) == 0 || count GVAR(ShownSides) > 4) then {" \n "		GVAR(ShownSides) = [west, east, resistance, civilian];" \n "	};" \n "};" \n "" \n "// Maximum distance for camera" \n "// 10 ~ 100 m, 50 ~ 500 m, default = 50, example ace_sys_spectatorGVAR(maxDistance) = 20;" \n "if (isNil QUOTE(GVAR(maxDistance))) then {GVAR(maxDistance) = 50};" \n "" \n "#define KCCAMERA 55002" \n "#define KCTARGET 55003" \n "#define KCLBCAMERAS 55005" \n "#define KCLBTARGETS 55006" \n "#define KCCAMERAsBG 55007" \n "#define KCTARGETsBG 55008" \n "#define KCBG1 55009" \n "#define KCBG2 55010" \n "#define KCTITLE 55011" \n "#define KCHELP 55012" \n "#define KCLIFETIME 50022" \n "#define KCCOMPASS 50023" \n "" \n "GVAR(SEUI) = [KCCAMERA, KCTARGET, KCLBCAMERAS, KCLBTARGETS, KCCAMERAsBG, KCTARGETsBG, KCBG1, KCBG2, KCTITLE, KCHELP, KCLIFETIME,KCCOMPASS];" \n "GVAR(SHOWSEUI) = true;" \n "GVAR(SEUICHANGED) = 0;" \n "";
+			};
+		};
+	};
+	class Item19
+	{
+		Flags=218;
+		BasicText="";
+		Left=-200;
+		Top=75;
+		Right=-100;
+		Bottom=125;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=19;
+				Priority=1;
+				Condition="typeName _seagull == ""OBJECT""";
+			};
+		};
+	};
+	class Item20
+	{
+		Flags=218;
+		BasicText="";
+		Left=-50;
+		Top=150;
+		Right=50;
+		Bottom=200;
+		BgColor=8421440;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=8;
+			class ItemInfo
+			{
+				Id=20;
+			};
+		};
+	};
+	class Item21
+	{
+		Flags=250;
+		BasicText="";
+		Left=-350;
+		Top=75;
+		Right=-250;
+		Bottom=125;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=21;
+				InitCode="_seagull setPos [-1000, -1000, 1000];" \n "" \n "_timeend = time + 5;";
+			};
+		};
+	};
+	class Item22
+	{
+		Flags=218;
+		BasicText="";
+		Left=-350;
+		Top=150;
+		Right=-250;
+		Bottom=200;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=22;
+				Condition="time >= _timeend";
+			};
+		};
+	};
+	class Item23
+	{
+		Flags=250;
+		BasicText="";
+		Left=-350;
+		Top=225;
+		Right=-250;
+		Bottom=275;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=23;
+				InitCode="titleCut["""", ""BLACK OUT"", 2]; // death simulating the lights going out. " \n "_timeend = time + 3; // holding back the startLoadingScreen spectator screen while viewing the death simulation (1 second longer than the Black Out Fade)";
+			};
+		};
+	};
+	class Item24
+	{
+		Flags=218;
+		BasicText="";
+		Left=-200;
+		Top=225;
+		Right=-100;
+		Bottom=275;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=24;
+				Condition="time >= _timeend";
+			};
+		};
+	};
+	class Item25
+	{
+		Flags=218;
+		BasicText="";
+		Left=-50;
+		Top=750;
+		Right=50;
+		Bottom=800;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			FontFace="";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=25;
+				Condition="(_bird modelToWorld [0, 0, 0]) select 2 < 0.05 && speed _bird < 1";
+			};
+		};
+	};
+	class Item26
+	{
+		Flags=250;
+		BasicText="";
+		Left=-50;
+		Top=850;
+		Right=50;
+		Bottom=900;
+		BgColor=16777215;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=2;
+			class ItemInfo
+			{
+				Id=26;
+				InitCode="disableSerialization;" \n "" \n "#define GVAR(var) ace_sys_spectator_##var" \n "#define QUOTE(quote) #quote" \n "#define FUNC(func) ace_sys_spectator_fnc_##func" \n "" \n "onMapSingleClick """";" \n "if (dialog) then {closeDialog 0};" \n "(findDisplay 46) displayRemoveEventHandler [""KeyDown"", GVAR(birdkeyDownEHId)];" \n "" \n "_timeend = time + 0.5;";
+			};
+		};
+	};
+	class Item27
+	{
+		Flags=218;
+		BasicText="";
+		Left=75;
+		Top=525;
+		Right=175;
+		Bottom=575;
+		BgColor=65535;
+		class ItemInfo
+		{
+			Text="";
+			lStyle=-842150451;
+			Shape=2;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=0;
+			FontCharSet=0;
+			ItemType=4;
+			class ItemInfo
+			{
+				Id=96;
+				Priority=5;
+				Condition="_doexitx";
+			};
+		};
+	};
+	class Item28
+	{
+		Flags=250;
+		BasicText="";
+		Left=225;
+		Top=525;
+		Right=325;
+		Bottom=575;
+		BgColor=33023;
+		class ItemInfo
+		{
+			Text="End";
+			lStyle=-842150451;
+			Shape=6;
+			Group=-842150451;
+			FontFace="Arial";
+			FontHeight=10;
+			FontWeight=700;
+			FontCharSet=0;
+			ItemType=1;
+			class ItemInfo
+			{
+				Id=97;
+				InitCode="#define GVAR(var) ace_sys_spectator_##var" \n "" \n "GVAR(SPECTATINGON) = nil;";
+			};
+		};
+	};
+};
+class GraphLinks
+{
+	class Link0
+	{
+		From=0;
+		To=3;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link1
+	{
+		From=0;
+		To=5;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link2
+	{
+		From=2;
+		To=7;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link3
+	{
+		From=3;
+		To=18;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link4
+	{
+		From=4;
+		To=2;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link5
+	{
+		From=5;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link6
+	{
+		From=7;
+		To=8;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link7
+	{
+		From=8;
+		To=9;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link8
+	{
+		From=9;
+		To=10;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link9
+	{
+		From=9;
+		To=12;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link10
+	{
+		From=9;
+		To=27;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link11
+	{
+		From=10;
+		To=11;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link12
+	{
+		From=11;
+		To=13;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link13
+	{
+		From=12;
+		To=16;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link14
+	{
+		From=13;
+		To=14;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link15
+	{
+		From=14;
+		To=15;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link16
+	{
+		From=15;
+		To=6;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link17
+	{
+		From=16;
+		To=25;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link18
+	{
+		From=17;
+		To=1;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link19
+	{
+		From=18;
+		To=19;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link20
+	{
+		From=18;
+		To=20;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link21
+	{
+		From=19;
+		To=21;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link22
+	{
+		From=20;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link23
+	{
+		From=21;
+		To=22;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link24
+	{
+		From=22;
+		To=23;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link25
+	{
+		From=23;
+		To=24;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link26
+	{
+		From=24;
+		To=4;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link27
+	{
+		From=25;
+		To=26;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link28
+	{
+		From=26;
+		To=17;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+	class Link29
+	{
+		From=27;
+		To=28;
+		Color=6316128;
+		Flags=2;
+		class Extra
+		{
+			ArrowSize=0;
+		};
+	};
+};
+class Globals
+{
+	Grid=25;
+	GridShow=1;
+	NextGroupID=1;
+	NextID=98;
+	FSMName="specta";
+	CompileConfig="G:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg";
+	class DefaultLink
+	{
+		ArrowSize=0;
+	};
+	DefaultLinkColor=6316128;
+	DefaultLinkUseCustom=1;
+	PZoomLeft=-556.39905;
+	PZoomRight=478.59131;
+	PZoomBottom=1177.3933;
+	PZoomTop=98.360786;
+	Clxs=705;
+	Clys=735;
+	Aspect=1;
+};
+class Window
+{
+	Flags=0;
+	MaxPosX=-1;
+	MaxPosY=-1;
+	MinPosX=-1;
+	MinPosY=-1;
+	Left=150;
+	Top=150;
+	Right=1563;
+	Bottom=1030;
+	ShowCmd=1;
+	SplitPos=723;
+};

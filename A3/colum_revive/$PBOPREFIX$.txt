@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=colum_revive
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'C76C8B8335EECE253AEE79A8856B19936DFEA041'
+//////</HEADER>//////

@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_wounds
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '5191528FCA588330C8101F7188C51524E057B4E1'
+//////</HEADER>//////

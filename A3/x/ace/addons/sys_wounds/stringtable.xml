@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2">
+<Package name="ACE2">
+<Container name="MODULE_DN">
+<Key ID="STR_ACE_WOUNDS_ENABLE">
+<English>(Æ) Wounds: Enable Wounding System</English>
+<Italian>(Æ) Wounds: Enable Wounding System</Italian>
+<German>(Æ) Wounds: Verwundungssystem</German>
+<Spanish>(Æ) Wounds: Enable Wounding System</Spanish>
+<Czech>(Æ) Wounds: Enable Wounding System</Czech>
+<Russian>(Æ) Ранения: Включить систему ранений</Russian>
+<Polish>(Æ) Obrażenia: Włącz system obrażeń</Polish>
+<French>(Æ) Wounds: Activer système soins</French>
+<Hungarian>(Æ) Wounds: Sebesülés rendszer</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_MEDICS_ONLY">
+<English>(Æ) Wounds: Only medics can use Epi and Morphine</English>
+<Italian>(Æ) Wounds: Only medics can use Epi and Morphine</Italian>
+<German>(Æ) Wounds: Nur Sani kann Epi und Morphine nutzen</German>
+<Spanish>(Æ) Wounds: Only medics can use Epi and Morphine</Spanish>
+<Czech>(Æ) Wounds: Only medics can use Epi and Morphine</Czech>
+<Russian>(Æ) Ранения: Только медики вкалывают адреналин и морфий</Russian>
+<Polish>(Æ) Obrażenia: Środki odurzające tylko dla sanitariuszy</Polish>
+<French>(Æ) Wounds: Seuls infirmiers peuvent utiliser Epi et Morphine</French>
+<Hungarian>(Æ) Wounds: Only medics can use Epi and Morphine</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_FULL_HEAL">
+<English>(Æ) Wounds: Full heal in the field</English>
+<Italian>(Æ) Wounds: Full heal in the field</Italian>
+<German>(Æ) Wounds: Überall heilen</German>
+<Spanish>(Æ) Wounds: Full heal in the field</Spanish>
+<Czech>(Æ) Wounds: Full heal in the field</Czech>
+<Russian>(Æ) Ранения: Полное лечение в поле</Russian>
+<Polish>(Æ) Obrażenia: pełne leczenie w warunkach polowych</Polish>
+<French>(Æ) Wounds: Full heal in the field</French>
+<Hungarian>(Æ) Wounds: Full heal in the field</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_ALL_MEDICS">
+<English>(Æ) Wounds: Everyone can use medkits</English>
+<Italian>(Æ) Wounds: Everyone can use medkits</Italian>
+<German>(Æ) Wounds: Medkits für alle</German>
+<Spanish>(Æ) Wounds: Everyone can use medkits</Spanish>
+<Czech>(Æ) Wounds: Everyone can use medkits</Czech>
+<Russian>(Æ) Ранения: Все могут использовать аптечки</Russian>
+<Polish>(Æ) Obrażenia: wszyscy mogą korzystać z apteczek</Polish>
+<French>(Æ) Wounds: Everyone can use medkits</French>
+<Hungarian>(Æ) Wounds: Everyone can use medkits</Hungarian>
+</Key>
+</Container>
+<Container name="DIALOG_USERACTION_STRINGS">
+<Key ID="STR_ACE_DIA_MEDICAL">
+<English>Medical treatment</English>
+<Italian>Medical treatment</Italian>
+<German>Medizinische Versorgung</German>
+<Spanish>Tratamiento medico</Spanish>
+<Czech>Medical treatment</Czech>
+<Russian>Меню лечения</Russian>
+<Polish>Opieka lekarska</Polish>
+<French>Traitement médical</French>
+<Hungarian>Orvosi ellátás</Hungarian>
+</Key>
+<Key ID="STR_ACE_DIA_MEDICALSELF">
+<English>Treat wounds</English>
+<Italian>Treat wounds</Italian>
+<German>Eigenversorgung</German>
+<Spanish>Tratar heridas</Spanish>
+<Czech>Treat wounds</Czech>
+<Russian>Лечиться</Russian>
+<Polish>Opatrz się</Polish>
+<French>Treat wounds</French>
+<Hungarian>Treat wounds</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_HEAL">
+<English>Heal</English>
+<Italian>Heal</Italian>
+<German>Heilen</German>
+<Spanish>Curar</Spanish>
+<Czech>Heal</Czech>
+<Russian>Лечить</Russian>
+<Polish>Opatrz rany</Polish>
+<French>Soigner</French>
+<Hungarian>Ellátás</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_LOAD">
+<English>Load %1 into %2</English>
+<Italian>Load %1 into %2</Italian>
+<German>%1 in %2 einladen</German>
+<Spanish>Cargar %1 en %2</Spanish>
+<Czech>Load %1 into %2</Czech>
+<Russian>Положить %1 в %2</Russian>
+<Polish>Wnieś %1 do %2</Polish>
+<French>Charger %1 dans %2</French>
+<Hungarian>%1 %2-be rakása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_DRAGWOUNDED">
+<English>Drag %1</English>
+<Italian>Drag %1</Italian>
+<German>%1 ziehen</German>
+<Spanish>Arrastrar %1</Spanish>
+<Czech>Drag %1</Czech>
+<Russian>Тащить %1</Russian>
+<Polish>Ciągnij %1</Polish>
+<French>Traîner %1</French>
+<Hungarian>%1 Vonszolása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CARRYWOUNDED">
+<English>Carry %1</English>
+<Italian>Carry %1</Italian>
+<German>%1 tragen</German>
+<Spanish>Cargar %1</Spanish>
+<Czech>Carry %1</Czech>
+<Russian>Нести %1</Russian>
+<Polish>Przenieś %1</Polish>
+<French>Porter %1</French>
+<Hungarian>%1 Cipelése</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CARRYDISABLED">
+<English>Help %1 walking</English>
+<Italian>Help %1 walking</Italian>
+<German>%1 beim Gehen helfen</German>
+<Spanish>Ayudar a %1 a andar</Spanish>
+<Czech>Help %1 walking</Czech>
+<Russian>Помочь %1 идти</Russian>
+<Polish>Pomóż %1 iść</Polish>
+<French>Help %1 walking</French>
+<Hungarian>Help %1 walking</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_DROP">
+<English>Drop %1</English>
+<Italian>Drop %1</Italian>
+<German>%1 ablegen</German>
+<Spanish>Soltar %1</Spanish>
+<Czech>Drop %1</Czech>
+<Russian>Положить %1</Russian>
+<Polish>Połóż %1</Polish>
+<French>Lacher %1</French>
+<Hungarian>%1 Elengedése</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_DROPPRONE">
+<English>Release %1</English>
+<Italian>Release %1</Italian>
+<German>%1 loslassen</German>
+<Spanish>Soltar %1</Spanish>
+<Czech>Release %1</Czech>
+<Russian>Отпустить %1</Russian>
+<Polish>Wypuść %1</Polish>
+<French>Poser %1</French>
+<Hungarian>%1 Elengedése</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_STOPBLEED">
+<English>Stop bleeding</English>
+<Italian>Stop bleeding</Italian>
+<German>Verband anlegen</German>
+<Spanish>Detener hemorragia</Spanish>
+<Czech>Stop bleeding</Czech>
+<Russian>Остановить кровотечение</Russian>
+<Polish>Zatamuj krwawienie</Polish>
+<French>Stopper l'hémorragie</French>
+<Hungarian>Vérzés elállítása</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_STOPBLEEDLARGE">
+<English>Apply compress</English>
+<Italian>Apply compress</Italian>
+<German>Blutung stoppen</German>
+<Spanish>Aplicar compresa</Spanish>
+<Czech>Apply compress</Czech>
+<Russian>Наложить повязку</Russian>
+<Polish>Załóż bandaż elastyczny</Polish>
+<French>Apply compress</French>
+<Hungarian>Apply compress</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_USEMORPHI">
+<English>Use morphine</English>
+<Italian>Use morphine</Italian>
+<German>Injeziere Morphin</German>
+<Spanish>Usar morfina</Spanish>
+<Czech>Use morphine</Czech>
+<Russian>Вколоть морфий</Russian>
+<Polish>Wstrzyknij morfinę</Polish>
+<French>Utiliser Morphine</French>
+<Hungarian>Morfium haszn.</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_USEEPI">
+<English>Use Epinephrine</English>
+<Italian>Use Epinephrine</Italian>
+<German>Injeziere Epinephrin</German>
+<Spanish>Usar epinefrina</Spanish>
+<Czech>Use Epinephrine</Czech>
+<Russian>Вколоть адреналин</Russian>
+<Polish>Wstrzyknij adrenalinę</Polish>
+<French>Utiliser adrénaline</French>
+<Hungarian>Adrenalin haszn.</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_FIRSTAID">
+<English>First Aid</English>
+<Italian>First Aid</Italian>
+<German>Erste Hilfe</German>
+<Spanish>Primeros auxilios</Spanish>
+<Czech>First Aid</Czech>
+<Russian>Первая помощь</Russian>
+<Polish>Pierwsza pomoc</Polish>
+<French>First Aid</French>
+<Hungarian>First Aid</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_ABORTFIRSTAID">
+<English>Abort First Aid</English>
+<Italian>Abort First Aid</Italian>
+<German>Erste Hilfe abbrechen</German>
+<Spanish>Abortar primeros auxilios</Spanish>
+<Czech>Abort First Aid</Czech>
+<Russian>Отменить первую помощь</Russian>
+<Polish>Przerwij udzielanie pierwszej pomocy</Polish>
+<French>Abort First Aid</French>
+<Hungarian>Abort First Aid</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_EXAMINE">
+<English>Examine</English>
+<Italian>Examine</Italian>
+<German>Untersuchen</German>
+<Spanish>Examinar</Spanish>
+<Czech>Examine</Czech>
+<Russian>Осмотреть</Russian>
+<Polish>Zbadaj</Polish>
+<French>Examiner</French>
+<Hungarian>Vizsgálat</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CPR">
+<English>CPR</English>
+<Italian>CPR</Italian>
+<German>CPR</German>
+<Spanish>CPR</Spanish>
+<Czech>CPR</Czech>
+<Russian>СЛР</Russian>
+<Polish>RK-O</Polish>
+<French>Réanimation cardio-pulmonaire</French>
+<Hungarian>CPR</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_XDEAD">
+<English>%1 is dead</English>
+<Italian>%1 is dead</Italian>
+<German>%1 ist tot</German>
+<Spanish>%1 esta muerto</Spanish>
+<Czech>%1 is dead</Czech>
+<Russian>%1 мёртв</Russian>
+<Polish>%1 nie żyje</Polish>
+<French>%1 est mort</French>
+<Hungarian>%1 halott</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_HEISDEAD">
+<English>He is dead</English>
+<Italian>He is dead</Italian>
+<German>Tot</German>
+<Spanish>Esta muerto</Spanish>
+<Czech>He is dead</Czech>
+<Russian>Он умер</Russian>
+<Polish>Nie żyje</Polish>
+<French>He is dead</French>
+<Hungarian>He is dead</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_XDIED">
+<English>%1 died</English>
+<Italian>%1 died</Italian>
+<German>%1 ist gestorben</German>
+<Spanish>%1 ha muerto</Spanish>
+<Czech>%1 died</Czech>
+<Russian>%1 умер</Russian>
+<Polish>Operacja się udała, %1 zmarł</Polish>
+<French>%1 a décédé</French>
+<Hungarian>%1 meghalt</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_XLOAD">
+<English>Loading %1 into the vehicle, stand by...</English>
+<Italian>Loading %1 into the vehicle, stand by...</Italian>
+<German>Lade %1 ins Fahrzeug ein...</German>
+<Spanish>Cargando %1 en el vehiculo, espere...</Spanish>
+<Czech>Loading %1 into the vehicle, stand by...</Czech>
+<Russian>Кладём %1 в транспорт, подождите...</Russian>
+<Polish>Wnoszenie %1 do pojazdu...</Polish>
+<French>Charger %1 dans le vehicule, patientez...</French>
+<Hungarian>%1 járműbe rakása, várj...</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_BODYLOAD">
+<English>Loading body into vehicle, stand by...</English>
+<Italian>Loading body into vehicle, stand by...</Italian>
+<German>Lade Leiche ins Fahrzeug ein...</German>
+<Spanish>Cargando cuerpo en el vehiculo, espere...</Spanish>
+<Czech>Loading body into vehicle, stand by...</Czech>
+<Russian>Кладём тело в транспорт, подождите...</Russian>
+<Polish>Wnoszenie ciała do pojazdu...</Polish>
+<French>Charger corps dans le vehicule, patientez...</French>
+<Hungarian>Test járműbe rakása, várj...</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_BODYUNLOAD">
+<English>Pull %1 out of vehicle</English>
+<Italian>Pull %1 out of vehicle</Italian>
+<German>Ziehe Verwundeten aus Fahrzeug</German>
+<Spanish>Sacar %1 del vehiculo</Spanish>
+<Czech>Pull %1 out of vehicle</Czech>
+<Russian>Вытащить раненого из транспорта</Russian>
+<Polish>Wyciągnij rannego z pojazdu</Polish>
+<French>Sortir l'unité du véhicule</French>
+<Hungarian>Egység kihúzása a járműből</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_MOVETOCARGO">
+<English>Move %1 to cargo</English>
+<Italian>Move %1 to cargo</Italian>
+<German>Move %1 to cargo</German>
+<Spanish>Mover %1 al asiento trasero</Spanish>
+<Czech>Move %1 to cargo</Czech>
+<Russian>Move %1 to cargo</Russian>
+<Polish>Move %1 to cargo</Polish>
+<French>Move %1 to cargo</French>
+<Hungarian>Move %1 to cargo</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_PUTFIREOUT">
+<English>Put fire out on %1</English>
+<Italian>Put fire out on %1</Italian>
+<German>Lösche %1</German>
+<Spanish>Put fire out on %1</Spanish>
+<Czech>Put fire out on %1</Czech>
+<Russian>Сбить огонь с %1</Russian>
+<Polish>Ratuj %1 przed spłonięciem</Polish>
+<French>Put fire out on %1</French>
+<Hungarian>Put fire out on %1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_NOTBURNING">
+<English>Not burning!</English>
+<Italian>Not burning!</Italian>
+<German>Kein Feuer</German>
+<Spanish>Not burning!</Spanish>
+<Czech>Not burning!</Czech>
+<Russian>Не горит!</Russian>
+<Polish>Nie pali się!</Polish>
+<French>Not burning!</French>
+<Hungarian>Not burning!</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_TRYINGPUTOUT">
+<English>Trying to put fire out!</English>
+<Italian>Trying to put fire out!</Italian>
+<German>Versuche zu löschen</German>
+<Spanish>Trying to put fire out!</Spanish>
+<Czech>Trying to put fire out!</Czech>
+<Russian>Пытаетесь сбить пламя!</Russian>
+<Polish>Próbujesz ugasić płomienie!</Polish>
+<French>Trying to put fire out!</French>
+<Hungarian>Trying to put fire out!</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_TRYINGPUTOUTSUCCESS">
+<English>You succeeded! Lucky him!</English>
+<Italian>You succeeded! Lucky him!</Italian>
+<German>Erfolgreich</German>
+<Spanish>You succeeded! Lucky him!</Spanish>
+<Czech>You succeeded! Lucky him!</Czech>
+<Russian>Удалось! Везунчик!</Russian>
+<Polish>Udało się! Szczęściarz...</Polish>
+<French>You succeeded! Lucky him!</French>
+<Hungarian>You succeeded! Lucky him!</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_TRYINGPUTOUTFAIL">
+<English>Didn't succeed! Poor him!</English>
+<Italian>Didn't succeed! Poor him!</Italian>
+<German>Fehlgeschlagen</German>
+<Spanish>Didn't succeed! Poor him!</Spanish>
+<Czech>Didn't succeed! Poor him!</Czech>
+<Russian>Не удалось! Бедняга!</Russian>
+<Polish>Nie udało się! A to pech...</Polish>
+<French>Didn't succeed! Poor him!</French>
+<Hungarian>Didn't succeed! Poor him!</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_START">
+<English>%1 is</English>
+<Italian>%1 is</Italian>
+<German>%1 ist</German>
+<Spanish>%1 esta</Spanish>
+<Czech>%1 is</Czech>
+<Russian>%1</Russian>
+<Polish>%1 jest</Polish>
+<French>%1 est</French>
+<Hungarian>%1</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_NOT_UNC">
+<English>conscious</English>
+<Italian>conscious</Italian>
+<German>nicht bewusstlos</German>
+<Spanish>consciente</Spanish>
+<Czech>conscious</Czech>
+<Russian>в сознании</Russian>
+<Polish>przytomny,</Polish>
+<French>conscient</French>
+<Hungarian>eszméleténél van</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_BUT_EPI">
+<English>but needs epinephrine.\n</English>
+<Italian>but needs epinephrine.\n</Italian>
+<German>aber benötigt Epinephrin.\n</German>
+<Spanish>pero necesita epinefrina.\n</Spanish>
+<Czech>but needs epinephrine.\n</Czech>
+<Russian>но нуждается в адреналине.\n</Russian>
+<Polish>ale potrzebuje adrenaliny.\n</Polish>
+<French>mais nécessite adrénaline.\n</French>
+<Hungarian>de szüksége van adrenalinra.\n</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_UNC">
+<English>unconscious</English>
+<Italian>unconscious</Italian>
+<German>bewusstlos</German>
+<Spanish>inconsciente</Spanish>
+<Czech>unconscious</Czech>
+<Russian>без сознания</Russian>
+<Polish>nieprzytomny</Polish>
+<French>inconscient</French>
+<Hungarian>eszméletlen</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_AND_EPI">
+<English>and needs epinephrine.\n</English>
+<Italian>and needs epinephrine.\n</Italian>
+<German>und benötigt Epinephrin.\n</German>
+<Spanish>y necesita epinefrina.\n</Spanish>
+<Czech>and needs epinephrine.\n</Czech>
+<Russian>и нуждается в адреналине.\n</Russian>
+<Polish>i potrzebuje adrenaliny.\n</Polish>
+<French>et nécessite adrénaline.\n</French>
+<Hungarian>és szüksége van adrenalinra.\n</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_NOT_BLEED">
+<English>He is not bleeding.\n</English>
+<Italian>He is not bleeding.\n</Italian>
+<German>Er blutet nicht.\n</German>
+<Spanish>No esta sangrando.\n</Spanish>
+<Czech>He is not bleeding.\n</Czech>
+<Russian>Он не истекает кровью.\n</Russian>
+<Polish>Brak krwawienia.\n</Polish>
+<French>Ne saigne pas.\n</French>
+<Hungarian>Nem vérzik.\n</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_BLEED">
+<English>He is bleeding and needs to get bandaged.\n</English>
+<Italian>He is bleeding and needs to get bandaged.\n</Italian>
+<German>Er blutet und muß bandagiert werden.\n</German>
+<Spanish>Esta sangrando y necesita ser vendado.\n</Spanish>
+<Czech>He is bleeding and needs to get bandaged.\n</Czech>
+<Russian>Он ранен и нуждается в перевязке.\n</Russian>
+<Polish>Należy zatamować krwawienie.\n</Polish>
+<French>Saigne et nécessite un pansement.\n</French>
+<Hungarian>Vérzik, és el kell látni a sebeit.\n</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_BLEED_HEAVY">
+<English>He is bleeding heavily and needs to get bandaged.\n</English>
+<Italian>He is bleeding heavily and needs to get bandaged.\n</Italian>
+<German>Er blutet stark und muß bandagiert werden.\n</German>
+<Spanish>Esta sangrando mucho y necesita ser vendado.\n</Spanish>
+<Czech>He is bleeding heavily and needs to get bandaged.\n</Czech>
+<Russian>У него сильное кровотечение и он нуждается в перевязке.\n</Russian>
+<Polish>Ciężko krwawi i potrzebuje opatrunku.\n</Polish>
+<French>He is bleeding heavily and needs to get bandaged.\n</French>
+<Hungarian>He is bleeding heavily and needs to get bandaged.\n</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_NOT_PAIN">
+<English>He has no pain.\n</English>
+<Italian>He has no pain.\n</Italian>
+<German>Er hat keine Schmerzen.\n</German>
+<Spanish>No tiene dolor.\n</Spanish>
+<Czech>He has no pain.\n</Czech>
+<Russian>Он не испытывает боли.\n</Russian>
+<Polish>Nie skarży się na ból.\n</Polish>
+<French>Ne ressent pas de douleurs.\n</French>
+<Hungarian>Nincsenek fájdalmai.\n</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CHECK_PAIN">
+<English>He has pain and needs morphine.\n</English>
+<Italian>He has pain and needs morphine.\n</Italian>
+<German>Er hat Schmerzen und benötigt Morphium.\n</German>
+<Spanish>Tiene dolor y necesita morfina.\n</Spanish>
+<Czech>He has pain and needs morphine.\n</Czech>
+<Russian>Он чувствует боль и нуждается в морфии.\n</Russian>
+<Polish>Potrzebuje morfiny dla uśmierzenia bólu.\n</Polish>
+<French>Ressent la douleur et nécessite morphine.\n</French>
+<Hungarian>Fájdalmai vannak, és szüksége van morfiumra.\n</Hungarian>
+</Key>
+<Key ID="STR_ACE_NO_UNIT">
+<English>Body</English>
+<Italian>Body</Italian>
+<German>Körper</German>
+<Spanish>Cuerpo</Spanish>
+<Czech>Body</Czech>
+<Russian>Тело</Russian>
+<Polish>ciało</Polish>
+<French>Corps</French>
+<Hungarian>Test</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_DROP_STRETCHER">
+<English>Drop stretcher</English>
+<Italian>Drop stretcher</Italian>
+<German>Trage abstellen</German>
+<Spanish>Soltar camilla</Spanish>
+<Czech>Drop stretcher</Czech>
+<Russian>Бросить носилки</Russian>
+<Polish>Upuść nosze</Polish>
+<French>Poser la civière</French>
+<Hungarian>Hordágy letétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_PICKUP_STRETCHER">
+<English>Pick up stretcher</English>
+<Italian>Pick up stretcher</Italian>
+<German>Trage aufnehmen</German>
+<Spanish>Recoger camilla</Spanish>
+<Czech>Pick up stretcher</Czech>
+<Russian>Подобрать носилки</Russian>
+<Polish>Zabierz nosze</Polish>
+<French>Prendre la civière</French>
+<Hungarian>Hordágy felvétele</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CARRY_STRETCHER_FRONT">
+<English>Lift stretcher (front)</English>
+<Italian>Lift stretcher (front)</Italian>
+<German>Trage vorne anheben</German>
+<Spanish>Levantar camilla(frente)</Spanish>
+<Czech>Lift stretcher (front)</Czech>
+<Russian>Поднять носилки (спереди)</Russian>
+<Polish>Podnieś nosze od przodu</Polish>
+<French>Lever la civière (devant)</French>
+<Hungarian>Hordágy emelése (elöl)</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_CARRY_STRETCHER_BACK">
+<English>Lift stretcher (back)</English>
+<Italian>Lift stretcher (back)</Italian>
+<German>Trage hinten anheben</German>
+<Spanish>Levantar camilla (trasera)</Spanish>
+<Czech>Lift stretcher (back)</Czech>
+<Russian>Поднять носилки (сзади)</Russian>
+<Polish>Podnieś nosze od tyłu</Polish>
+<French>Lever la civière (derrière)</French>
+<Hungarian>Hordágy emelése (hátul)</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_STRETCHER_AUSPACKEN">
+<English>Place stretcher</English>
+<Italian>Place stretcher</Italian>
+<German>Trage ablegen</German>
+<Spanish>Colocar camilla</Spanish>
+<Czech>Place stretcher</Czech>
+<Russian>Положить носилки</Russian>
+<Polish>Połóż nosze</Polish>
+<French>Placer la civière</French>
+<Hungarian>Hordágy elhelyezése</Hungarian>
+</Key>
+</Container>
+<Container name="STR_DN">
+<Key ID="STR_DN_ACE_BANDAGEBOX">
+<English>(Æ)Medical Supply Box</English>
+<Italian>(Æ)Medical Supply Box</Italian>
+<German>(Æ)Medizinisches Material</German>
+<Spanish>(UST) Caja de suministros medicos</Spanish>
+<Czech>(Æ)Medical Supply Box</Czech>
+<Russian>(Æ)Ящик с медицинским оборудованием</Russian>
+<Polish>(Æ)Skrzynia z medykamentami</Polish>
+<French>(Æ)Medical Supply Box</French>
+<Hungarian>(Æ)Medical Supply Box</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_ACE_BANDAGEBOXWEST">
+<English>Medical Supply Box (West)</English>
+<Italian>Medical Supply Box (West)</Italian>
+<German>Medizinisches Material</German>
+<Spanish>(UST)Medical Supply Box (West)</Spanish>
+<Czech>Medical Supply Box (West)</Czech>
+<Russian>Ящик с медицинским оборудованием (Запад)</Russian>
+<Polish>Skrzynia z medykamentami (Zachód)</Polish>
+<French>Medical Supply Box (West)</French>
+<Hungarian>Medical Supply Box (West)</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_BANDAGEBOXEAST">
+<English>Medical Supply Box (East)</English>
+<Italian>Medical Supply Box (East)</Italian>
+<German>Medizinisches Material</German>
+<Spanish>(UST)Medical Supply Box (East)</Spanish>
+<Czech>Medical Supply Box (East)</Czech>
+<Russian>Ящик с медицинским оборудованием (Восток)</Russian>
+<Polish>Skrzynia z medykamentami (Wschód)</Polish>
+<French>Medical Supply Box (East)</French>
+<Hungarian>Medical Supply Box (East)</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_BANDAGE">
+<English>Bandage</English>
+<Italian>Fascia</Italian>
+<German>Verbandpäckchen</German>
+<Spanish>Venda</Spanish>
+<Czech>Obinadlo</Czech>
+<Russian>Бинт</Russian>
+<Polish>Bandaż</Polish>
+<French>Bandage</French>
+<Hungarian>Kötszer</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_LARGEBANDAGE">
+<English>Compress</English>
+<Italian>Largo fascia</Italian>
+<German>Druckverband</German>
+<Spanish>Paquete de vendas</Spanish>
+<Czech>Obšírný obvaz</Czech>
+<Russian>Давящая повязка</Russian>
+<Polish>Bandaż elastyczny</Polish>
+<French>Compress</French>
+<Hungarian>Kötszer (nagy)</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_TOURNIQUET">
+<English>Tourniquet</English>
+<Italian>Laccio emostatico</Italian>
+<German>Tourniquet</German>
+<Spanish>Torniquete</Spanish>
+<Czech>Škrtidlo</Czech>
+<Russian>Жгут</Russian>
+<Polish>Opaska uciskowa</Polish>
+<French>Tourniquet</French>
+<Hungarian>Érszorító</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_MORPHINE">
+<English>Morphine</English>
+<Italian>Morfina</Italian>
+<German>Morphin</German>
+<Spanish>Morfina</Spanish>
+<Czech>Morfium</Czech>
+<Russian>Морфий</Russian>
+<Polish>Morfina</Polish>
+<French>Morphine</French>
+<Hungarian>Morfium</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_EPINEPHRINE">
+<English>Epinephrine</English>
+<Italian>Epinefrina</Italian>
+<German>Epinephrin</German>
+<Spanish>Epinefrina</Spanish>
+<Czech>Adrenalin</Czech>
+<Russian>Адреналин</Russian>
+<Polish>Adrenalina</Polish>
+<French>Adrénaline</French>
+<Hungarian>Adrenalin</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_SPLINT">
+<English>Splint</English>
+<Italian>Stecca</Italian>
+<German>Schiene</German>
+<Spanish>Tablilla</Spanish>
+<Czech>Dláha</Czech>
+<Russian>Шина</Russian>
+<Polish>Szyna</Polish>
+<French>Attelle</French>
+<Hungarian>Sín</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_IV">
+<English>IV Bag</English>
+<Italian>Flebo</Italian>
+<German>Tropf</German>
+<Spanish>Goteo</Spanish>
+<Czech>Infúze</Czech>
+<Russian>Капельница</Russian>
+<Polish>Kroplówka</Polish>
+<French>Perfusion</French>
+<Hungarian>Intravénás csomag</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_PLASMA">
+<English>Plasma</English>
+<Italian>Plasma</Italian>
+<German>Blutplasma</German>
+<Spanish>Plasma</Spanish>
+<Czech>Plasma</Czech>
+<Russian>Плазма</Russian>
+<Polish>Osocze</Polish>
+<French>Plasma</French>
+<Hungarian>Plazma</Hungarian>
+</Key>
+<Key ID="STR_ACE_ITEM_BODYBAG">
+<English>Bodybag</English>
+<Italian>Bodybag</Italian>
+<German>Leichensack</German>
+<Spanish>Bolsa para cadaveres</Spanish>
+<Czech>Bodybag</Czech>
+<Russian>Мешок для трупов</Russian>
+<Polish>Worek na ciało</Polish>
+<French>Bodybag</French>
+<Hungarian>Bodybag</Hungarian>
+</Key>
+<Key ID="STR_ACE_BODYBAG">
+<English>Bodybag</English>
+<Italian>Bodybag</Italian>
+<German>Leichensack</German>
+<Spanish>Embolsar cadaver</Spanish>
+<Czech>Bodybag</Czech>
+<Russian>Мешок для трупов</Russian>
+<Polish>Worek na ciało</Polish>
+<French>Bodybag</French>
+<Hungarian>Bodybag</Hungarian>
+</Key>
+<Key ID="STR_DN_ACE_STRETCHER">
+<English>Stretcher</English>
+<Italian>Stretcher</Italian>
+<German>Trage</German>
+<Spanish>Camilla</Spanish>
+<Czech>Stretcher</Czech>
+<Russian>Носилки</Russian>
+<Polish>Nosze</Polish>
+<French>Civière</French>
+<Hungarian>Hordágy</Hungarian>
+</Key>
+<Key ID="STR_ACE_UA_SPHEAL">
+<English>Heal %1</English>
+<Italian>Heal %1</Italian>
+<German>%1 heilen</German>
+<Spanish>Curar %1</Spanish>
+<Czech>Heal %1</Czech>
+<Russian>Лечить %1</Russian>
+<Polish>Opatrz %1</Polish>
+<French>Soigner %1</French>
+<Hungarian>%1 Ellátása</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_NO_MORPH">
+<English>Only medics can use morphium!</English>
+<Italian>Only medics can use morphium!</Italian>
+<German>Nur Sanitäter können Morphium benutzen!</German>
+<Spanish>Solo los medicos pueden usar morfina!</Spanish>
+<Czech>Only medics can use morphium!</Czech>
+<Russian>Только медики могут вкалывать морфий!</Russian>
+<Polish>Tylko przeszkolony personel może dawkować morfinę!</Polish>
+<French>Seuls les infirmiers peuvent utiliser la morphine!</French>
+<Hungarian>Only medics can use morphium!</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_NO_EPI">
+<English>Only medics can use epinephrine!</English>
+<Italian>Only medics can use epinephrine!</Italian>
+<German>Nur Sanitäter können Epinephrin benutzen!</German>
+<Spanish>Solo los medicos pueden usar epinefrina!</Spanish>
+<Czech>Only medics can use epinephrine!</Czech>
+<Russian>Только медики могут вкалывать адреналин!</Russian>
+<Polish>Tylko przeszkolony personel może dawkować adrenalinę!</Polish>
+<French>Seuls les infirmiers peuvent utiliser l'adrénaline!</French>
+<Hungarian>Only medics can use epinephrine!</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_CANCEL_CPR">
+<English>Cancel CPR</English>
+<Italian>Cancel CPR</Italian>
+<German>CPR Abbrechen</German>
+<Spanish>Cancelar CPR</Spanish>
+<Czech>Cancel CPR</Czech>
+<Russian>Отменить СЛР</Russian>
+<Polish>Przerwij RK-O</Polish>
+<French>Annuler CPR</French>
+<Hungarian>Cancel CPR</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_HEALED">
+<English>healed him Fully</English>
+<Italian>healed him Fully</Italian>
+<German>geheilt</German>
+<Spanish>curado completamente</Spanish>
+<Czech>healed him Fully</Czech>
+<Russian>вылечен Полностью</Russian>
+<Polish>w pełni uleczyć rany</Polish>
+<French>healed him Fully</French>
+<Hungarian>healed him Fully</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_PATCHED">
+<English>patched him Up</English>
+<Italian>patched him Up</Italian>
+<German>versorgt</German>
+<Spanish>patched him Up</Spanish>
+<Czech>patched him Up</Czech>
+<Russian>оказана первая помощь</Russian>
+<Polish>opatrzyć rany</Polish>
+<French>patched him Up</French>
+<Hungarian>patched him Up</Hungarian>
+</Key>
+<Key ID="STR_ACE_WOUNDS_SUCK">
+<English>Succesfully </English>
+<Italian>Succesfully </Italian>
+<German>Erfolgreich</German>
+<Spanish>Satisfactoriamente </Spanish>
+<Czech>Succesfully</Czech>
+<Russian>Успешно</Russian>
+<Polish>Udało się</Polish>
+<French>Succesfully</French>
+<Hungarian>Succesfully</Hungarian>
+</Key>
+<Key ID="STR_ACE_LIFE_TIME_REV">
+<English>Life time: %1</English>
+<Italian>Life time: %1</Italian>
+<German>Life time: %1</German>
+<Spanish>Tiempo de vida restante: %1</Spanish>
+<Czech>Life time: %1</Czech>
+<Russian>Life time: %1</Russian>
+<Polish>Life time: %1</Polish>
+<French>Life time: %1</French>
+<Hungarian>Life time: %1</Hungarian>
+</Key>
+</Container></Package></Project>

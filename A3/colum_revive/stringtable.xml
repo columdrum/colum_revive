@@ -1,0 +1,1681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma2"><Package name="settings">
+
+<Container name="STR_PARAM_INFO">
+<!----------------- REVIVE MODULE ------------------->
+<Key ID="STR_PARAM_COLUM_REV_LIFENUM_INFO">
+<English>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</English>
+<German>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</German>
+<Spanish>Nº de vidas. Minimo 1( aunque no tiene mucho sentido ya me moriras a la primera)</Spanish>
+<Czech>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</Czech>
+<Russian>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</Russian>
+<Italian>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</Italian>
+<Polish>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</Polish>
+<French>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</French>
+<Hungarian>Nº of lifes. Minimum number is 1( doesn't make much sense tought since you will directly die when killed), use 1000 for unlimited</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFENUM">
+<English>Num Lifes:</English>
+<German>Num Lifes:</German>
+<Spanish>Numero Vidas:</Spanish>
+<Czech>Num Lifes:</Czech>
+<Russian>Num Lifes:</Russian>
+<Italian>Num Lifes:</Italian>
+<Polish>Num Lifes:</Polish>
+<French>Num Lifes:</French>
+<Hungarian>Num Lifes:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_AI_INFO">
+<English>Disable IA wounding system for IA, seems to cause more desync.</English>
+<German>Disable IA wounding system for IA, seems to cause more desync.</German>
+<Spanish>Desactiva el sistema de heridas para las I.A. , en principio se comportan mejor sin el.</Spanish>
+<Czech>Disable IA wounding system for IA, seems to cause more desync.</Czech>
+<Russian>Disable IA wounding system for IA, seems to cause more desync.</Russian>
+<Italian>Disable IA wounding system for IA, seems to cause more desync.</Italian>
+<Polish>Disable IA wounding system for IA, seems to cause more desync.</Polish>
+<French>Disable IA wounding system for IA, seems to cause more desync.</French>
+<Hungarian>Disable IA wounding system for IA, seems to cause more desync.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_AI">
+<English>NO ACE Wound AI:</English>
+<German>NO ACE Wound AI:</German>
+<Spanish>NO ACE Wound AI:</Spanish>
+<Czech>NO ACE Wound AI:</Czech>
+<Russian>NO ACE Wound AI:</Russian>
+<Italian>NO ACE Wound AI:</Italian>
+<Polish>NO ACE Wound AI:</Polish>
+<French>NO ACE Wound AI:</French>
+<Hungarian>NO ACE Wound AI:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_TIMER_INFO">
+<English>Total time that units remains uncon before die, in seconds</English>
+<German>Total time that units remains uncon before die, in seconds</German>
+<Spanish>Tiempo por el que se permanece inconsciente(muerto) antes de morir definitivamente.</Spanish>
+<Czech>Total time that units remains uncon before die, in seconds</Czech>
+<Russian>Total time that units remains uncon before die, in seconds</Russian>
+<Italian>Total time that units remains uncon before die, in seconds</Italian>
+<Polish>Total time that units remains uncon before die, in seconds</Polish>
+<French>Total time that units remains uncon before die, in seconds</French>
+<Hungarian>Total time that units remains uncon before die, in seconds</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_TIMER">
+<English>Revive Timer:</English>
+<German>Revive Timer:</German>
+<Spanish>Tiempo Revive:</Spanish>
+<Czech>Revive Timer:</Czech>
+<Russian>Revive Timer:</Russian>
+<Italian>Revive Timer:</Italian>
+<Polish>Revive Timer:</Polish>
+<French>Revive Timer:</French>
+<Hungarian>Revive Timer:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_ONLYMEDIC_INFO">
+<English>Allow only medics to use morphine and ephinifrine</English>
+<German>Allow only medics to use morphine and ephinifrine</German>
+<Spanish>Si se activa esta opcion, solo los medicos podran usar morfina y epinefrina</Spanish>
+<Czech>Allow only medics to use morphine and ephinifrine</Czech>
+<Russian>Allow only medics to use morphine and ephinifrine</Russian>
+<Italian>Allow only medics to use morphine and ephinifrine</Italian>
+<Polish>Allow only medics to use morphine and ephinifrine</Polish>
+<French>Allow only medics to use morphine and ephinifrine</French>
+<Hungarian>Allow only medics to use morphine and ephinifrine</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_ONLYMEDIC">
+<English>Only Medics use morph/epi:</English>
+<German>Only Medics use morph/epi:</German>
+<Spanish>Solo medicos usan morfina/epi:</Spanish>
+<Czech>Only Medics use morph/epi:</Czech>
+<Russian>Only Medics use morph/epi:</Russian>
+<Italian>Only Medics use morph/epi:</Italian>
+<Polish>Only Medics use morph/epi:</Polish>
+<French>Only Medics use morph/epi:</French>
+<Hungarian>Only Medics use morph/epi:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WITHSPECT_INFO">
+<English>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</English>
+<German>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</German>
+<Spanish>Modo espectador del revive cuando estamos inconscientes. Si se desActiva tendremos la pantalla negra mientras estamos muertos.</Spanish>
+<Czech>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</Czech>
+<Russian>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</Russian>
+<Italian>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</Italian>
+<Polish>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</Polish>
+<French>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</French>
+<Hungarian>If Enabled, spectator will be activated wile uncons, if disabled you will see a black screen while uncons.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WITHSPECT">
+<English>Uncons Spect:</English>
+<German>Uncons Spect:</German>
+<Spanish>Espectador Incosn:</Spanish>
+<Czech>Uncons Spect:</Czech>
+<Russian>Uncons Spect:</Russian>
+<Italian>Uncons Spect:</Italian>
+<Polish>Uncons Spect:</Polish>
+<French>Uncons Spect:</French>
+<Hungarian>Uncons Spect:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_TKCHECK_INFO">
+<English>Show team kill mesages</English>
+<German>Show team kill mesages</German>
+<Spanish>Mostrar mensages de TK entre jugadores. Habilitado= mostrar mensajes. Desactivado= no mostrar</Spanish>
+<Czech>Show team kill mesages</Czech>
+<Russian>Show team kill mesages</Russian>
+<Italian>Show team kill mesages</Italian>
+<Polish>Show team kill mesages</Polish>
+<French>Show team kill mesages</French>
+<Hungarian>Show team kill mesages</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_TKCHECK">
+<English>TK check:</English>
+<German>TK check:</German>
+<Spanish>Check TK :</Spanish>
+<Czech>TK check:</Czech>
+<Russian>TK check:</Russian>
+<Italian>TK check:</Italian>
+<Polish>TK check:</Polish>
+<French>TK check:</French>
+<Hungarian>TK check:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SPECTENEMY_INFO">
+<English>Show enemy units when you are totally death, true= show all, false = only your side.</English>
+<German>Show enemy units when you are totally death, true= show all, false = only your side.</German>
+<Spanish>Mostrar enemigos en el espectador una vez totalmente muerto(sin vidas). Habilitado = mostrar, Desactivado = no mostrar.</Spanish>
+<Czech>Show enemy units when you are totally death, true= show all, false = only your side.</Czech>
+<Russian>Show enemy units when you are totally death, true= show all, false = only your side.</Russian>
+<Italian>Show enemy units when you are totally death, true= show all, false = only your side.</Italian>
+<Polish>Show enemy units when you are totally death, true= show all, false = only your side.</Polish>
+<French>Show enemy units when you are totally death, true= show all, false = only your side.</French>
+<Hungarian>Show enemy units when you are totally death, true= show all, false = only your side.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SPECTENEMY">
+<English>Enemy Spect:</English>
+<German>Enemy Spect:</German>
+<Spanish>Enemigos en Spect:</Spanish>
+<Czech>Enemy Spect:</Czech>
+<Russian>Enemy Spect:</Russian>
+<Italian>Enemy Spect:</Italian>
+<Polish>Enemy Spect:</Polish>
+<French>Enemy Spect:</French>
+<Hungarian>Enemy Spect:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_PVP_INFO">
+<English>Pvp enabled, markers and uncons mesages only will be seen by your teammates</English>
+<German>Pvp enabled, markers and uncons mesages only will be seen by your teammates</German>
+<Spanish>PvP, los mensages de muerte, marcas en el mapa y demas seran por bando, para evitar dar informacion al bando contrario en PvP.</Spanish>
+<Czech>Pvp enabled, markers and uncons mesages only will be seen by your teammates</Czech>
+<Russian>Pvp enabled, markers and uncons mesages only will be seen by your teammates</Russian>
+<Italian>Pvp enabled, markers and uncons mesages only will be seen by your teammates</Italian>
+<Polish>Pvp enabled, markers and uncons mesages only will be seen by your teammates</Polish>
+<French>Pvp enabled, markers and uncons mesages only will be seen by your teammates</French>
+<Hungarian>Pvp enabled, markers and uncons mesages only will be seen by your teammates</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_PVP">
+<English>PvP:</English>
+<German>PvP:</German>
+<Spanish>PvP:</Spanish>
+<Czech>PvP:</Czech>
+<Russian>PvP:</Russian>
+<Italian>PvP:</Italian>
+<Polish>PvP:</Polish>
+<French>PvP:</French>
+<Hungarian>PvP:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WOUNDSCORE_INFO">
+<English>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</English>
+<German>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</German>
+<Spanish>Herir gravemente heridos +1 puntuacion, herir gravemente aliado -1 puntuacion. Pensado especialmente para PvP, simplemente para dar credito por herir a enemigos y no solo por matarlos cuando no tienen mas vidas.</Spanish>
+<Czech>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</Czech>
+<Russian>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</Russian>
+<Italian>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</Italian>
+<Polish>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</Polish>
+<French>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</French>
+<Hungarian>Heaiyly wound and enemy player would give the attacker +1 score, and -1 if he wound and ally. This is intented to be used on PvP games to have a better stat tracking, because without this feature enabled, you will only be credited when you kill a player that had no lifes left.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WOUNDSCORE">
+<English>Scoring:</English>
+<German>Scoring:</German>
+<Spanish>Puntuaciones:</Spanish>
+<Czech>Scoring:</Czech>
+<Russian>Scoring:</Russian>
+<Italian>Scoring:</Italian>
+<Polish>Scoring:</Polish>
+<French>Scoring:</French>
+<Hungarian>Scoring:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_JIPTELEP_INFO">
+<English>Jip players wil have an option to teleport to his squadmates when conected pressing F12.</English>
+<German>Jip players wil have an option to teleport to his squadmates when conected.</German>
+<Spanish>Los jugadores que entran tarde tendran la posivilidad de teletransportarse a la posicion de su escuadra pulsando F12.</Spanish>
+<Czech>Jip players wil have an option to teleport to his squadmates when conected pressing F12.</Czech>
+<Russian>Jip players wil have an option to teleport to his squadmates when conected pressing F12.</Russian>
+<Italian>Jip players wil have an option to teleport to his squadmates when conected pressing F12.</Italian>
+<Polish>Jip players wil have an option to teleport to his squadmates when conected pressing F12.</Polish>
+<French>Jip players wil have an option to teleport to his squadmates when conected pressing F12.</French>
+<Hungarian>Jip players wil have an option to teleport to his squadmates when conected pressing F12.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_JIPTELEP">
+<English>JIP telep(F12):</English>
+<German>JIP telep(F12):</German>
+<Spanish>JIP telep(F12):</Spanish>
+<Czech>JIP telep(F12):</Czech>
+<Russian>JIP telep(F12):</Russian>
+<Italian>JIP telep(F12):</Italian>
+<Polish>JIP telep(F12):</Polish>
+<French>JIP telep(F12):</French>
+<Hungarian>JIP telep(F12):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DISCONECTSAV_INFO">
+<English>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</English>
+<German>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</German>
+<Spanish>Cuando un jugador se desconecta se guarda su posicion, inventario y estado(si estaba incosciente o no). Cuando reconecta, volvera a esa posicion. True para habilitar, false deshabilitar</Spanish>
+<Czech>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</Czech>
+<Russian>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</Russian>
+<Italian>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</Italian>
+<Polish>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</Polish>
+<French>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</French>
+<Hungarian>The gear, heal status and position are stored on player disconnect and restored on conect. =true Enabled = false disabled. KNOWN ISUE: backpack contents and weapon on back are not saved because are local to the client :(.( that excludes the medical gear of the backpack that its added again for medics).</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DISCONECTSAV">
+<English>Save status on disconnect:</English>
+<German>Save status on disconnect:</German>
+<Spanish>Guardar estado al descon:</Spanish>
+<Czech>Save status on disconnect:</Czech>
+<Russian>Save status on disconnect:</Russian>
+<Italian>Save status on disconnect:</Italian>
+<Polish>Save status on disconnect:</Polish>
+<French>Save status on disconnect:</French>
+<Hungarian>Save status on disconnect:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESPAWN_INFO">
+<English>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</English>
+<German>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</German>
+<Spanish>Permitir respawn . false= si se acaba el tiempo mueres definitivamente aunque te queden vidas. true= si se acaba el tiempo o cuando se decida hay opcion de hacer respawn si quedan vidas</Spanish>
+<Czech>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</Czech>
+<Russian>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</Russian>
+<Italian>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</Italian>
+<Polish>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</Polish>
+<French>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</French>
+<Hungarian>allow respawn . false= if uncons time runs out you will DIE PERMANENTLY, EVEN IF YOU HAD LIFES LEFT. true= if you get out of time you will respawn on the designated respawn if you had lives left</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESPAWN">
+<English>Respawn:</English>
+<German>Respawn:</German>
+<Spanish>Respawn:</Spanish>
+<Czech>Respawn:</Czech>
+<Russian>Respawn:</Russian>
+<Italian>Respawn:</Italian>
+<Polish>Respawn:</Polish>
+<French>Respawn:</French>
+<Hungarian>Respawn:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESPSIDE_INFO">
+<English>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</English>
+<German>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</German>
+<Spanish>Respawn por bandos . false= todos el mismo respawn. true= cada bando tiene su respawn</Spanish>
+<Czech>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</Czech>
+<Russian>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</Russian>
+<Italian>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</Italian>
+<Polish>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</Polish>
+<French>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</French>
+<Hungarian>Side respawns . false= everybody has the same respawn. true= each side has his own respawn points</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESPSIDE">
+<English>Respawn by side:</English>
+<German>Respawn by side:</German>
+<Spanish>Respawn por bando:</Spanish>
+<Czech>Respawn by side:</Czech>
+<Russian>Respawn by side:</Russian>
+<Italian>Respawn by side:</Italian>
+<Polish>Respawn by side:</Polish>
+<French>Respawn by side:</French>
+<Hungarian>Respawn by side:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFESIDE_INFO">
+<English>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</English>
+<German>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</German>
+<Spanish>Vidas por bandos . false=Todos el mismo numero de vidas. true= vidas segun el bando, se definen mas abajo</Spanish>
+<Czech>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</Czech>
+<Russian>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</Russian>
+<Italian>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</Italian>
+<Polish>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</Polish>
+<French>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</French>
+<Hungarian>Side lifes . false=everybody has the same number of lifes. true= each side has his own number of lifes</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFESIDE">
+<English>Lifes by side:</English>
+<German>Lifes by side:</German>
+<Spanish>Vidas por bando:</Spanish>
+<Czech>Lifes by side:</Czech>
+<Russian>Lifes by side:</Russian>
+<Italian>Lifes by side:</Italian>
+<Polish>Lifes by side:</Polish>
+<French>Lifes by side:</French>
+<Hungarian>Lifes by side:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DEATHMARKER_INFO">
+<English>Death map Markers, false= no markers, true= wounded units would be shown on the map.</English>
+<German>Death map Markers, false= no markers, true= wounded units would be shown on the map.</German>
+<Spanish>Marcadores en el mapa, false= Sin marcadore, true= Las unidades gravemente heridas apareceran marcadas en el mapa.</Spanish>
+<Czech>Death map Markers, false= no markers, true= wounded units would be shown on the map.</Czech>
+<Russian>Death map Markers, false= no markers, true= wounded units would be shown on the map.</Russian>
+<Italian>Death map Markers, false= no markers, true= wounded units would be shown on the map.</Italian>
+<Polish>Death map Markers, false= no markers, true= wounded units would be shown on the map.</Polish>
+<French>Death map Markers, false= no markers, true= wounded units would be shown on the map.</French>
+<Hungarian>Death map Markers, false= no markers, true= wounded units would be shown on the map.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DEATHMARKER">
+<English>Map markers:</English>
+<German>Map markers:</German>
+<Spanish>Marcadores del mapa:</Spanish>
+<Czech>Map markers:</Czech>
+<Russian>Map markers:</Russian>
+<Italian>Map markers:</Italian>
+<Polish>Map markers:</Polish>
+<French>Map markers:</French>
+<Hungarian>Map markers:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DEATHMSG_INFO">
+<English>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</English>
+<German>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</German>
+<Spanish>Mensages de muerte . false=No mostrara ningun mensage cuando alguien caiga herido. true= se mostrara un mensage cuando alguien cae gravemente herido</Spanish>
+<Czech>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</Czech>
+<Russian>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</Russian>
+<Italian>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</Italian>
+<Polish>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</Polish>
+<French>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</French>
+<Hungarian>Death Messages . false=no mesages. true= a mesage will be shown when someone falls uncons.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DEATHMSG">
+<English>Death messages:</English>
+<German>Death messages:</German>
+<Spanish>Mensages de muerte:</Spanish>
+<Czech>Death messages:</Czech>
+<Russian>Death messages:</Russian>
+<Italian>Death messages:</Italian>
+<Polish>Death messages:</Polish>
+<French>Death messages:</French>
+<Hungarian>Death messages:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DLEAVEGROUP_INFO">
+<English>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</English>
+<German>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</German>
+<Spanish>Muertos dejan grupo . false=Los muertos siguen en el grupo original, solo que incoscientes. true=Cuando alguien muere definitivamente es expulsado del grupo, deberia dar mejores resultados, tan solo esta como opcion por si da problemas con algun script mal hecho que tome como referencia la unidad del lider</Spanish>
+<Czech>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</Czech>
+<Russian>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</Russian>
+<Italian>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</Italian>
+<Polish>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</Polish>
+<French>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</French>
+<Hungarian>death people leave group . Recomended true, only false if you use a stupid script that uses the leader unit to get the group in the middle of the game.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DLEAVEGROUP">
+<English>Death leave group:</English>
+<German>Death leave group:</German>
+<Spanish>Death leave group:</Spanish>
+<Czech>Death leave group:</Czech>
+<Russian>Death leave group:</Russian>
+<Italian>Death leave group:</Italian>
+<Polish>Death leave group:</Polish>
+<French>Death leave group:</French>
+<Hungarian>Death leave group:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LEVANTAHEAL_INFO">
+<English>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</English>
+<German>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</German>
+<Spanish>Al "revivir" a alguien curar automaticamente sin medkit. True activado, false desactivado. Menos realista, pero por si se quiere dejar parecido a como estaba antes</Spanish>
+<Czech>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</Czech>
+<Russian>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</Russian>
+<Italian>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</Italian>
+<Polish>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</Polish>
+<French>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</French>
+<Hungarian>On medic revive make full heal( so you don't need to use medkit after revive, only for normal healing). True enabled, false (Default) disabled</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LEVANTAHEAL">
+<English>Full healt revive:</English>
+<German>Full healt revive:</German>
+<Spanish>Revir completamente curado:</Spanish>
+<Czech>Full healt revive:</Czech>
+<Russian>Full healt revive:</Russian>
+<Italian>Full healt revive:</Italian>
+<Polish>Full healt revive:</Polish>
+<French>Full healt revive:</French>
+<Hungarian>Full healt revive:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESBUTPUNISH_INFO">
+<English>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</English>
+<German>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</German>
+<Spanish>Penalizar pulsar el boton de respawn con la muerte. Si se habilita al pulsar el boton de respawn estaras fuera de la mision(0 vidas)</Spanish>
+<Czech>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</Czech>
+<Russian>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</Russian>
+<Italian>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</Italian>
+<Polish>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</Polish>
+<French>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</French>
+<Hungarian>Penalice Respawn button with Death. If enabled, if you press the respawn button you are out of the game, if false, you will only lose a life</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESBUTPUNISH">
+<English>Punish resp button:</English>
+<German>Punish resp button:</German>
+<Spanish>Punish resp button:</Spanish>
+<Czech>Punish resp button:</Czech>
+<Russian>Punish resp button:</Russian>
+<Italian>Punish resp button:</Italian>
+<Polish>Punish resp button:</Polish>
+<French>Punish resp button:</French>
+<Hungarian>Punish resp button:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_KillONConnectFail_INFO">
+<English>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</English>
+<German>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</German>
+<Spanish>Si se falla al recibir las vidas del servidor, se mata al jugador. Habilitado = muerte si fallo, desActivado= si se falla al recibir, se usa el numero total de vidas :S</Spanish>
+<Czech>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</Czech>
+<Russian>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</Russian>
+<Italian>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</Italian>
+<Polish>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</Polish>
+<French>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</French>
+<Hungarian>If server fails to send the number of lifes,  set it to 0. If set to false, if fails, you will get all the lifes</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_KillONConnectFail">
+<English>Kill on connect fail:</English>
+<German>Kill on connect fail:</German>
+<Spanish>Matar si falla el init:</Spanish>
+<Czech>Kill on connect fail:</Czech>
+<Russian>Kill on connect fail:</Russian>
+<Italian>Kill on connect fail:</Italian>
+<Polish>Kill on connect fail:</Polish>
+<French>Kill on connect fail:</French>
+<Hungarian>Kill on connect fail:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DISCPUNISH_INFO">
+<English>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</English>
+<German>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</German>
+<Spanish>Si el jugador se desconecta mientras esta incosciente o muerto, pierde una vida. Para evitar exploits(desconectarse para evitar la muerte y otras perrerias ¬¬)</Spanish>
+<Czech>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</Czech>
+<Russian>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</Russian>
+<Italian>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</Italian>
+<Polish>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</Polish>
+<French>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</French>
+<Hungarian>If the player disconects while unconscious or heavy wounded, he will lose one life. This may avoid some posible exploits.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DISCPUNISH">
+<English>Disconnect punish:</English>
+<German>Disconnect punish:</German>
+<Spanish>Penalizar desconexion:</Spanish>
+<Czech>Disconnect punish:</Czech>
+<Russian>Disconnect punish:</Russian>
+<Italian>Disconnect punish:</Italian>
+<Polish>Disconnect punish:</Polish>
+<French>Disconnect punish:</French>
+<Hungarian>Disconnect punish:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_EXTRAMEDTIME_INFO">
+<English>Been inside or near medical vehicles/structures grants extra time to the revive counter</English>
+<German>Been inside or near medical vehicles/structures grants extra time to the revive counter</German>
+<Spanish>Estar cerca de instalaciones medicas o en vehiculos hace que se tenga algo mas de tiempo para revivir a una persona herida( por ej estar dentro de una ambulancia incrementa el tiempo que puedes estar gravemente herido)</Spanish>
+<Czech>Been inside or near medical vehicles/structures grants extra time to the revive counter</Czech>
+<Russian>Been inside or near medical vehicles/structures grants extra time to the revive counter</Russian>
+<Italian>Been inside or near medical vehicles/structures grants extra time to the revive counter</Italian>
+<Polish>Been inside or near medical vehicles/structures grants extra time to the revive counter</Polish>
+<French>Been inside or near medical vehicles/structures grants extra time to the revive counter</French>
+<Hungarian>Been inside or near medical vehicles/structures grants extra time to the revive counter</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_EXTRAMEDTIME">
+<English>Extra medevac time:</English>
+<German>Extra medevac time:</German>
+<Spanish>Tiempo de medevac extra:</Spanish>
+<Czech>Extra medevac time:</Czech>
+<Russian>Extra medevac time:</Russian>
+<Italian>Extra medevac time:</Italian>
+<Polish>Extra medevac time:</Polish>
+<French>Extra medevac time:</French>
+<Hungarian>Extra medevac time:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SPECTWORKAROUND_INFO">
+<English>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</English>
+<German>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</German>
+<Spanish>Arregla algunos errores que pueden hacer que el jugador se quede atascado en el espectador. Añadida como opcion ya que son arreglos hardcoded que pueden dejar de funionar en futuras versiones del ACE</Spanish>
+<Czech>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</Czech>
+<Russian>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</Russian>
+<Italian>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</Italian>
+<Polish>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</Polish>
+<French>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</French>
+<Hungarian>Fixes some errors that may end you stuck on spectator. Added as an option because its hardcoded nature can cause troubles in future  ACE spectator script changes</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SPECTWORKAROUND">
+<English>Spectator workaround:</English>
+<German>Spectator workaround:</German>
+<Spanish>Spectator workaround:</Spanish>
+<Czech>Spectator workaround:</Czech>
+<Russian>Spectator workaround:</Russian>
+<Italian>Spectator workaround:</Italian>
+<Polish>Spectator workaround:</Polish>
+<French>Spectator workaround:</French>
+<Hungarian>Spectator workaround:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOMED_INFO">
+<English>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</English>
+<German>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</German>
+<Spanish>Mochila para el medico, dejar en blanco para deshabilitar</Spanish>
+<Czech>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</Czech>
+<Russian>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</Russian>
+<Italian>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</Italian>
+<Polish>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</Polish>
+<French>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</French>
+<Hungarian>Medic rucksack. Leave blank for disabled any other rucksack classname to enable</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOMED">
+<English>Medic backpack:</English>
+<German>Medic backpack:</German>
+<Spanish>Mochila del medico:</Spanish>
+<Czech>Medic backpack:</Czech>
+<Russian>Medic backpack:</Russian>
+<Italian>Medic backpack:</Italian>
+<Polish>Medic backpack:</Polish>
+<French>Medic backpack:</French>
+<Hungarian>Medic backpack:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOCONT_INFO">
+<English>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits] </English>
+<German>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits]</German>
+<Spanish>Contenido de la mochila, solo solo funciona si se especifica una mochila válida.&lt;br /&gt;&lt;br /&gt;Los contenidos estan ordenados:&lt;br /&gt;&lt;br /&gt; [nº comprres, nº morphina, nº ephinifrina, nº granadas humo verde, nº medkits]</Spanish>
+<Czech>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits]</Czech>
+<Russian>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits]</Russian>
+<Italian>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits]</Italian>
+<Polish>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits]</Polish>
+<French>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits]</French>
+<Hungarian>Contents for the rucksack &lt;br /&gt;&lt;br /&gt;The contents are:&lt;br /&gt;&lt;br /&gt;[nº compress, nº morphine, nº ephinifrine, nº green smoke grenades, medkits]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOCONT">
+<English>Medic backpack contents:</English>
+<German>Medic backpack contents:</German>
+<Spanish>Contenido de la mochila medica:</Spanish>
+<Czech>Medic backpack contents:</Czech>
+<Russian>Medic backpack contents:</Russian>
+<Italian>Medic backpack contents:</Italian>
+<Polish>Medic backpack contents:</Polish>
+<French>Medic backpack contents:</French>
+<Hungarian>Medic backpack contents:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_ACELEFTDAM_INFO">
+<English>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</English>
+<German>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</German>
+<Spanish>Daño minimo que queda despues de curar el MEDICO, multiplicado por cada cura. Recomendable 0.01 a 0.08 o 0 para desactivar. Aun asi, en los hospitales y vehiculos medicos se curaria totalmente independientemente de este parametro.</Spanish>
+<Czech>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</Czech>
+<Russian>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</Russian>
+<Italian>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</Italian>
+<Polish>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</Polish>
+<French>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</French>
+<Hungarian>Minimun damage left after been healed with the medkit.  0 disabled. Values recomended 0.01-0.08</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_ACELEFTDAM">
+<English>Medkit left damage:</English>
+<German>Medkit left damage:</German>
+<Spanish>Medkit left damage:</Spanish>
+<Czech>Medkit left damage:</Czech>
+<Russian>Medkit left damage:</Russian>
+<Italian>Medkit left damage:</Italian>
+<Polish>Medkit left damage:</Polish>
+<French>Medkit left damage:</French>
+<Hungarian>Medkit left damage:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WATERACT_INFO">
+<English>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</English>
+<German>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</German>
+<Spanish>Accion a realizar si alguien muere en el agua. hay 3 posibles opciones: &lt;br /&gt;&lt;br /&gt;0 : no hacer nada, como hasta la version anterior. El muerto se undira en el fondo del mar,  por lo que si es agua profunda sera irrecuperable, pero podria serlo si la profundidad es poca &lt;br /&gt;&lt;br /&gt;1 : muerte directa si el agua es profunda. Lo mismo que el caso anterior solo que si la profundidad es mayor a 2m mueres directamente, no tiene sentido quedar en el fondo sin poder ser salvado &lt;br /&gt;&lt;br /&gt; 2 : El jugador herido queda flotando en el agua. Cualquiera puede acercase y agarrarlo si va nadando. Si se accerca cualquier vehiculo aliado, subira automaticamente a bordo.&lt;br /&gt;&lt;br /&gt;3 : El jugador es transportado a la costa mas cercana donde podria ser salvado.</Spanish>
+<Czech>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</Czech>
+<Russian>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</Russian>
+<Italian>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</Italian>
+<Polish>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</Polish>
+<French>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</French>
+<Hungarian>This parameter determines wath to do if someone dies in the water, the posible options are:&lt;br /&gt;&lt;br /&gt;0 : Do nothing . if deep water, it will be no chance to save him, escept if there is respawn :P, if not, you may be able to drag out of the water.&lt;br /&gt;&lt;br /&gt;1 : Direct death ( lifes=0 if respawn not enabled, and -1 life if respawn enabled) if the player dies and sinks in deep water &lt;br /&gt;&lt;br /&gt;2 : The dead player floats over the water, there is 2 ways to save him. Go with a vehicle really close to him and he will get onboard automaticaly, also you can swing to him to grab him and carry him to the coast.&lt;br /&gt;&lt;br /&gt; 3 : The player is moved to the nearest coast, using norrin script.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WATERACT">
+<English>Above water death act:</English>
+<German>Above water death act:</German>
+<Spanish>Accion para muerte en agua:</Spanish>
+<Czech>Above water death act:</Czech>
+<Russian>Above water death act:</Russian>
+<Italian>Above water death act:</Italian>
+<Polish>Above water death act:</Polish>
+<French>Above water death act:</French>
+<Hungarian>Above water death act:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFEPERSIST_INFO">
+<English>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt; >1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</English>
+<German>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt; >1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</German>
+<Spanish>Persistencia de las vidas del los jugadores:&lt;br /&gt;&lt;br /&gt; -1 : infinito, las vidas persisten hasta que se cambie la mision(opcion por defecto) &lt;br /&gt;&lt;br /&gt; 0 : No persistentes, las vidas se resetean al reconectar. &lt;br /&gt;&lt;br /&gt; >1 : Las vidas se resetean pasado X tiempo (en segundos)</Spanish>
+<Czech>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt;>1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</Czech>
+<Russian>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt; >1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</Russian>
+<Italian>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt; >1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</Italian>
+<Polish>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt; >1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</Polish>
+<French>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt; >1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</French>
+<Hungarian>Life persistance: &lt;br /&gt;&lt;br /&gt;-1 : always persistent. Lifes will only be reseted on mision restart or using Colum_Revive_Funcion_Reset_Data function(default)&lt;br /&gt;&lt;br /&gt;0 : non persistan lifes, players that JIP will have the max number of lifes&lt;br /&gt;&lt;br /&gt; >1 :The lifes of the players will be reseted after some amount of time(seconds). For example if you set it to (30*60) a player that runs out of lifes when 30 mins have passed after his death, if he reconnects he will have max lifes</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFEPERSIST">
+<English>Life persistence time:</English>
+<German>Life persistence time:</German>
+<Spanish>Tiempo de persistencia vidas:</Spanish>
+<Czech>Life persistence time:</Czech>
+<Russian>Life persistence time:</Russian>
+<Italian>Life persistence time:</Italian>
+<Polish>Life persistence time:</Polish>
+<French>Life persistence time:</French>
+<Hungarian>Life persistence time:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOCONT_WEST">
+<English>Medic backpack contents(Bluefor):</English>
+<German>Medic backpack contents(Bluefor):</German>
+<Spanish>Contenido de la mochila medica(Bluefor):</Spanish>
+<Czech>Medic backpack contents(Bluefor):</Czech>
+<Russian>Medic backpack contents(Bluefor):</Russian>
+<Italian>Medic backpack contents(Bluefor):</Italian>
+<Polish>Medic backpack contents(Bluefor):</Polish>
+<French>Medic backpack contents(Bluefor):</French>
+<Hungarian>Medic backpack contents(Bluefor):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOCONT_EAST">
+<English>Medic backpack contents(Oppfor):</English>
+<German>Medic backpack contents(Oppfor):</German>
+<Spanish>Contenido de la mochila medica(Oppfor):</Spanish>
+<Czech>Medic backpack contents(Oppfor):</Czech>
+<Russian>Medic backpack contents(Oppfor):</Russian>
+<Italian>Medic backpack contents(Oppfor):</Italian>
+<Polish>Medic backpack contents(Oppfor):</Polish>
+<French>Medic backpack contents(Oppfor):</French>
+<Hungarian>Medic backpack contents(Oppfor):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOCONT_GUER">
+<English>Medic backpack contents(indepen):</English>
+<German>Medic backpack contents(indepen):</German>
+<Spanish>Contenido de la mochila medica(indepen):</Spanish>
+<Czech>Medic backpack contents(indepen):</Czech>
+<Russian>Medic backpack contents(indepen):</Russian>
+<Italian>Medic backpack contents(indepen):</Italian>
+<Polish>Medic backpack contents(indepen):</Polish>
+<French>Medic backpack contents(indepen):</French>
+<Hungarian>Medic backpack contents(indepen):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOCONT_CIV">
+<English>Medic backpack contents(Civil):</English>
+<German>Medic backpack contents(Civil):</German>
+<Spanish>Contenido de la mochila medica(Civil):</Spanish>
+<Czech>Medic backpack contents(Civil):</Czech>
+<Russian>Medic backpack contents(Civil):</Russian>
+<Italian>Medic backpack contents(Civil):</Italian>
+<Polish>Medic backpack contents(Civil):</Polish>
+<French>Medic backpack contents(Civil):</French>
+<Hungarian>Medic backpack contents(Civil):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOMED_WEST">
+<English>Medic backpack(Bluefor):</English>
+<German>Medic backpack(Bluefor):</German>
+<Spanish>Mochila medico(Bluefor):</Spanish>
+<Czech>Medic backpack(Bluefor):</Czech>
+<Russian>Medic backpack(Bluefor):</Russian>
+<Italian>Medic backpack(Bluefor):</Italian>
+<Polish>Medic backpack(Bluefor):</Polish>
+<French>Medic backpack(Bluefor):</French>
+<Hungarian>Medic backpack(Bluefor):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOMED_EAST">
+<English>Medic backpack(Oppfor):</English>
+<German>Medic backpack(Oppfor):</German>
+<Spanish>Mochila medico(Oppfor):</Spanish>
+<Czech>Medic backpack(Oppfor):</Czech>
+<Russian>Medic backpack(Oppfor):</Russian>
+<Italian>Medic backpack(Oppfor):</Italian>
+<Polish>Medic backpack(Oppfor):</Polish>
+<French>Medic backpack(Oppfor):</French>
+<Hungarian>Medic backpack(Oppfor):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOMED_GUER">
+<English>Medic backpack(indepen):</English>
+<German>Medic backpack(indepen):</German>
+<Spanish>Mochila medico(indepen):</Spanish>
+<Czech>Medic backpack(indepen):</Czech>
+<Russian>Medic backpack(indepen):</Russian>
+<Italian>Medic backpack(indepen):</Italian>
+<Polish>Medic backpack(indepen):</Polish>
+<French>Medic backpack(indepen):</French>
+<Hungarian>Medic backpack(indepen):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_MOCHILOMED_CIV">
+<English>Medic backpack(Civil):</English>
+<German>Medic backpack(Civil):</German>
+<Spanish>Mochila medico(Civil):</Spanish>
+<Czech>Medic backpack(Civil):</Czech>
+<Russian>Medic backpack(Civil):</Russian>
+<Italian>Medic backpack(Civil):</Italian>
+<Polish>Medic backpack(Civil):</Polish>
+<French>Medic backpack(Civil):</French>
+<Hungarian>Medic backpack(Civil):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFENUM_SIDE_INFO">
+<English>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</English>
+<German>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</German>
+<Spanish>Nº de vidas. Dejar a -1 para usar las vidas por defecto. Cualquier otro numero para definir el numero de vidas de este bando. Usar 1000 para infinitas vidas</Spanish>
+<Czech>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</Czech>
+<Russian>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</Russian>
+<Italian>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</Italian>
+<Polish>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</Polish>
+<French>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</French>
+<Hungarian>Nº of lifes. Leave to -1 to use default number of lifes, any other to define life number for this side(lifes by side must be enabled), use 1000 for unlimited</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFENUM_WEST">
+<English>Num Lifes(Bluefor):</English>
+<German>Num Lifes(Bluefor):</German>
+<Spanish>Numero Vidas(Bluefor):</Spanish>
+<Czech>Num Lifes(Bluefor):</Czech>
+<Russian>Num Lifes(Bluefor):</Russian>
+<Italian>Num Lifes(Bluefor):</Italian>
+<Polish>Num Lifes(Bluefor):</Polish>
+<French>Num Lifes(Bluefor):</French>
+<Hungarian>Num Lifes(Bluefor):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFENUM_EAST">
+<English>Num Lifes(Oppfor):</English>
+<German>Num Lifes(Oppfor):</German>
+<Spanish>Numero Vidas(Oppfor):</Spanish>
+<Czech>Num Lifes(Oppfor):</Czech>
+<Russian>Num Lifes(Oppfor):</Russian>
+<Italian>Num Lifes(Oppfor):</Italian>
+<Polish>Num Lifes(Oppfor):</Polish>
+<French>Num Lifes(Oppfor):</French>
+<Hungarian>Num Lifes(Oppfor):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFENUM_GUER">
+<English>Num Lifes(Independ):</English>
+<German>Num Lifes(Independ):</German>
+<Spanish>Numero Vidas(Independ):</Spanish>
+<Czech>Num Lifes(Independ):</Czech>
+<Russian>Num Lifes(Independ):</Russian>
+<Italian>Num Lifes(Independ):</Italian>
+<Polish>Num Lifes(Independ):</Polish>
+<French>Num Lifes(Independ):</French>
+<Hungarian>Num Lifes(Independ):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_LIFENUM_CIV">
+<English>Num Lifes(CIV):</English>
+<German>Num Lifes(CIV):</German>
+<Spanish>Numero Vidas(CIV):</Spanish>
+<Czech>Num Lifes(CIV):</Czech>
+<Russian>Num Lifes(CIV):</Russian>
+<Italian>Num Lifes(CIV):</Italian>
+<Polish>Num Lifes(CIV):</Polish>
+<French>Num Lifes(CIV):</French>
+<Hungarian>Num Lifes(CIV):</Hungarian>
+</Key>
+
+<Key ID="STR_BUTTONS_COLUM_WaterAction_OPT1">
+<English>0- No Action</English>
+<German>0- No Action</German>
+<Spanish>0- Ninguna accion</Spanish>
+<Czech>0- No Action</Czech>
+<Russian>0- No Action</Russian>
+<Italian>0- No Action</Italian>
+<Polish>0- No Action</Polish>
+<French>0- No Action</French>
+<Hungarian>0- No Action</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_COLUM_WaterAction_OPT2">
+<English>1- Death(respawn if enabled)</English>
+<German>1- Death(respawn if enabled)</German>
+<Spanish>1- Muerte</Spanish>
+<Czech>1- Death(respawn if enabled)</Czech>
+<Russian>1- Death(respawn if enabled)</Russian>
+<Italian>1- Death(respawn if enabled)</Italian>
+<Polish>1- Death(respawn if enabled)</Polish>
+<French>1- Death(respawn if enabled)</French>
+<Hungarian>1- Death(respawn if enabled)</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_COLUM_WaterAction_OPT3">
+<English>2- Float over water</English>
+<German>2- Float over water</German>
+<Spanish>2- Flotar sobre el agua</Spanish>
+<Czech>2- Float over water</Czech>
+<Russian>2- Float over water</Russian>
+<Italian>2- Float over water</Italian>
+<Polish>2- Float over water</Polish>
+<French>2- Float over water</French>
+<Hungarian>2- Float over water</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_COLUM_WaterAction_OPT4">
+<English>3- Near coast</English>
+<German>3- Near coast</German>
+<Spanish>3- Orilla cercana</Spanish>
+<Czech>3- Near coast</Czech>
+<Russian>3- Near coast</Russian>
+<Italian>3- Near coast</Italian>
+<Polish>3- Near coast</Polish>
+<French>3- Near coast</French>
+<Hungarian>3- Near coast</Hungarian>
+</Key>
+
+<Key ID="STR_PARAM_COLUM_REV_SHOWTIMER">
+<English>Show revive timer:</English>
+<German>Show revive timer:</German>
+<Spanish>Mostrar timer:</Spanish>
+<Czech>Show revive timer:</Czech>
+<Russian>Show revive timer:</Russian>
+<Italian>Show revive timer:</Italian>
+<Polish>Show revive timer:</Polish>
+<French>Show revive timer:</French>
+<Hungarian>Show revive timer:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SHOWTIMER_INFO">
+<English>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</English>
+<German>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</German>
+<Spanish>Ativamos el modo espectador del revive cuando estamos inconscientes. False para pantalla negra mientras estamos muertos.</Spanish>
+<Czech>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</Czech>
+<Russian>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</Russian>
+<Italian>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</Italian>
+<Polish>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</Polish>
+<French>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</French>
+<Hungarian>If enabled the revive timer will be shown while waiting. If disabled you will only have visual indications of the time remaining no real timer</Hungarian>
+</Key>
+
+<Key ID="STR_PARAM_COLUM_REV_DISCONECT_T">
+<English>Save each (s):</English>
+<German>Save each (s):</German>
+<Spanish>Guardar cada(s):</Spanish>
+<Czech>Save each (s):</Czech>
+<Russian>Save each (s):</Russian>
+<Italian>Save each (s):</Italian>
+<Polish>Save each (s):</Polish>
+<French>Save each (s):</French>
+<Hungarian>Save each (s):</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_DISCONECT_T_INFO">
+<English>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</English>
+<German>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</German>
+<Spanish>Tiempo cada el que se salvara la posicion y inventario del jugador. -1 para solo salvar al desconectar. El tiempo es en segundos y aproximado ya que tiene en cuenta otros parametros como distancia caminada y cambios en el inventaro</Spanish>
+<Czech>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</Czech>
+<Russian>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</Russian>
+<Italian>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</Italian>
+<Polish>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</Polish>
+<French>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</French>
+<Hungarian>Time in seconds between player data save. Recomended values > 60. Leave -1 to only save on disconnect</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SAVERUCK">
+<English>Save backpack contents:</English>
+<German>Save backpack contents:</German>
+<Spanish>Guardar mochilas:</Spanish>
+<Czech>Save backpack contents:</Czech>
+<Russian>Save backpack contents:</Russian>
+<Italian>Save backpack contents:</Italian>
+<Polish>Save backpack contents:</Polish>
+<French>Save backpack contents:</French>
+<Hungarian>Save backpack contents:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SAVERUCK_INFO">
+<English>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</English>
+<German>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</German>
+<Spanish>Guardar contenidos de la mochila. Actualmente solo disponible si la opcion anterior esta habilitada.</Spanish>
+<Czech>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</Czech>
+<Russian>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</Russian>
+<Italian>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</Italian>
+<Polish>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</Polish>
+<French>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</French>
+<Hungarian>Saves rucksack contents. Note that it may generate extra network traffic if the save each XXX seconds options its enabled.</Hungarian>
+</Key>
+
+<Key ID="STR_PARAM_COLUM_REV_WAVETIMERESPAWN">
+<English>Wave respawn T:</English>
+<German>Wave respawn T:</German>
+<Spanish>Respawn oleadas:</Spanish>
+<Czech>Wave respawn T:</Czech>
+<Russian>Wave respawn T:</Russian>
+<Italian>Wave respawn T:</Italian>
+<Polish>Wave respawn T:</Polish>
+<French>Wave respawn T:</French>
+<Hungarian>Wave respawn T:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WAVETIMERESPAWN_INFO">
+<English>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</English>
+<German>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</German>
+<Spanish>Si esta activo el respawn, permite que los respawn sean por oleadas y no por el tiempo desde la muerte de cada jugador. Significado: [ Tiempo desde el inicio de la mision  ,  Tiempo entre oleadas] . Todos los tiempos en segundos. IMPORTANTE esto anula la opcion: ace_sys_spectator_RevShowButtonTime</Spanish>
+<Czech>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</Czech>
+<Russian>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</Russian>
+<Italian>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</Italian>
+<Polish>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</Polish>
+<French>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</French>
+<Hungarian>Changes the respawn timer so you will respawn in waves instead of after X time after you death. Params: [initial wave delay from mission start, time between waves]. This option disables ace_sys_spectator_RevShowButtonTime</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_ENDGAMEIFALLDIE">
+<English>End game trigger:</English>
+<German>End game trigger:</German>
+<Spanish>Fin si todos muertos:</Spanish>
+<Czech>End game trigger:</Czech>
+<Russian>End game trigger:</Russian>
+<Italian>End game trigger:</Italian>
+<Polish>End game trigger:</Polish>
+<French>End game trigger:</French>
+<Hungarian>End game trigger:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_ENDGAMEIFALLDIE_INFO">
+<English>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</English>
+<German>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</German>
+<Spanish>La mision termina si todos los de los bandos indicados mueren. Tener en cuenta que aunque este desactivado([]) siempre se puede usar la variable:  Colum_revive_AlivePlayers = 0 (todos los jugadores muertos) Colum_revive_AlivePlayers_WEST ==0(jugadores bluefor muertos), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Tambien esta disposible: Colum_revive_AliveMedics y Colum_revive_AliveMedics_BANDO con el numero de medicos disponibles ( solo jugadores!, tener en cuenta q puede haber medico IA)</Spanish>
+<Czech>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</Czech>
+<Russian>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</Russian>
+<Italian>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</Italian>
+<Polish>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</Polish>
+<French>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</French>
+<Hungarian>Mission ends if all the players die or are unconscious. [] disabled. Enables some extra variables like: Colum_revive_AlivePlayers (number of alive players) Colum_revive_AlivePlayers_WEST ==0( condition: all west players dead), Colum_revive_AlivePlayers_EAST,Colum_revive_AlivePlayers_GUER, Colum_revive_AlivePlayers_CIV. Also: Colum_revive_AliveMedics y Colum_revive_AliveMedics_SIDE . Those could be usefull on triggers.</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_KILLIFNOMEDIC">
+<English>Kill if no medic:</English>
+<German>Kill if no medic:</German>
+<Spanish>Muerte si no medicos:</Spanish>
+<Czech>Kill if no medic:</Czech>
+<Russian>Kill if no medic:</Russian>
+<Italian>Kill if no medic:</Italian>
+<Polish>Kill if no medic:</Polish>
+<French>Kill if no medic:</French>
+<Hungarian>Kill if no medic:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_KILLIFNOMEDIC_INFO">
+<English>If enabled you will be totally killed if there is no medics left</English>
+<German>If enabled you will be totally killed if there is no medics left</German>
+<Spanish>Si se activa moriremos completamente sin tiempo si no quedan medicos vivos que puedan revivirte.</Spanish>
+<Czech>If enabled you will be totally killed if there is no medics left</Czech>
+<Russian>If enabled you will be totally killed if there is no medics left</Russian>
+<Italian>If enabled you will be totally killed if there is no medics left</Italian>
+<Polish>If enabled you will be totally killed if there is no medics left</Polish>
+<French>If enabled you will be totally killed if there is no medics left</French>
+<Hungarian>If enabled you will be totally killed if there is no medics left</Hungarian>
+</Key>
+
+<Key ID="STR_PARAM_COLUM_REV_SHOWBUTTONTIME">
+<English>Resp button time:</English>
+<German>Resp button time:</German>
+<Spanish>Tiempo botones:</Spanish>
+<Czech>Resp button time:</Czech>
+<Russian>Resp button time:</Russian>
+<Italian>Resp button time:</Italian>
+<Polish>Resp button time:</Polish>
+<French>Resp button time:</French>
+<Hungarian>Resp button time:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_SHOWBUTTONTIME_INFO">
+<English>Time to appear the respawn buttons when you are wounded, in seconds</English>
+<German>Time to appear the respawn buttons when you are wounded, in seconds</German>
+<Spanish>Tiempo antes de la aparicion de los botones de respawn en segundos, obviamente menor que el tiempo total que se permanece muerto</Spanish>
+<Czech>Time to appear the respawn buttons when you are wounded, in seconds</Czech>
+<Russian>Time to appear the respawn buttons when you are wounded, in seconds</Russian>
+<Italian>Time to appear the respawn buttons when you are wounded, in seconds</Italian>
+<Polish>Time to appear the respawn buttons when you are wounded, in seconds</Polish>
+<French>Time to appear the respawn buttons when you are wounded, in seconds</French>
+<Hungarian>Time to appear the respawn buttons when you are wounded, in seconds</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT">
+<English>Button Text:</English>
+<German>Button Text:</German>
+<Spanish>Texto Botones:</Spanish>
+<Czech>Button Text:</Czech>
+<Russian>Button Text:</Russian>
+<Italian>Button Text:</Italian>
+<Polish>Button Text:</Polish>
+<French>Button Text:</French>
+<Hungarian>Button Text:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_INFO">
+<English>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</English>
+<German>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</German>
+<Spanish>Texto de los botones. Numero ilimitado de marcadores, se pueden agregar los necesarios. Ejemplo con solo 2 botones :  ["respawn1", "respawn2"]</Spanish>
+<Czech>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Czech>
+<Russian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Russian>
+<Italian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Italian>
+<Polish>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Polish>
+<French>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</French>
+<Hungarian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS">
+<English>Resp Markers:</English>
+<German>Resp Markers:</German>
+<Spanish>Resp Markers:</Spanish>
+<Czech>Resp Markers:</Czech>
+<Russian>Resp Markers:</Russian>
+<Italian>Resp Markers:</Italian>
+<Polish>Resp Markers:</Polish>
+<French>Resp Markers:</French>
+<Hungarian>Resp Markers:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_INFO">
+<English>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</English>
+<German>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</German>
+<Spanish>Nombre de los marcadores de respawn. EJ: ["respawn1_marker", "respawn2_marker"]</Spanish>
+<Czech>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Czech>
+<Russian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Russian>
+<Italian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Italian>
+<Polish>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Polish>
+<French>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</French>
+<Hungarian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET">
+<English>Resp. Z offset:</English>
+<German>Resp. Z offset:</German>
+<Spanish>Resp. Z offset:</Spanish>
+<Czech>Resp. Z offset:</Czech>
+<Russian>Resp. Z offset:</Russian>
+<Italian>Resp. Z offset:</Italian>
+<Polish>Resp. Z offset:</Polish>
+<French>Resp. Z offset:</French>
+<Hungarian>Resp. Z offset:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_INFO">
+<English>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</English>
+<German>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</German>
+<Spanish>Offset de altura para los respawn. Util por ejemplo para respawns en un edificio o portaaviones. EJ: [0,0]</Spanish>
+<Czech>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Czech>
+<Russian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Russian>
+<Italian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Italian>
+<Polish>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Polish>
+<French>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</French>
+<Hungarian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Hungarian>
+</Key>
+
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_WEST">
+<English>(WEST)Button Text:</English>
+<German>(WEST)Button Text:</German>
+<Spanish>(WEST)Texto Botones:</Spanish>
+<Czech>(WEST)Button Text:</Czech>
+<Russian>(WEST)Button Text:</Russian>
+<Italian>(WEST)Button Text:</Italian>
+<Polish>(WEST)Button Text:</Polish>
+<French>(WEST)Button Text:</French>
+<Hungarian>(WEST)Button Text:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_WEST_INFO">
+<English>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</English>
+<German>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</German>
+<Spanish>Texto de los botones. Numero ilimitado de marcadores, se pueden agregar los necesarios. Ejemplo con solo 2 botones :  ["respawn1", "respawn2"]</Spanish>
+<Czech>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Czech>
+<Russian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Russian>
+<Italian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Italian>
+<Polish>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Polish>
+<French>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</French>
+<Hungarian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_WEST_RESMARKERS">
+<English>(WEST)Resp Markers:</English>
+<German>(WEST)Resp Markers:</German>
+<Spanish>(WEST)Resp Markers:</Spanish>
+<Czech>(WEST)Resp Markers:</Czech>
+<Russian>(WEST)Resp Markers:</Russian>
+<Italian>(WEST)Resp Markers:</Italian>
+<Polish>(WEST)Resp Markers:</Polish>
+<French>(WEST)Resp Markers:</French>
+<Hungarian>(WEST)Resp Markers:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_WEST_INFO">
+<English>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</English>
+<German>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</German>
+<Spanish>Nombre de los marcadores de respawn. EJ: ["respawn1_marker", "respawn2_marker"]</Spanish>
+<Czech>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Czech>
+<Russian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Russian>
+<Italian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Italian>
+<Polish>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Polish>
+<French>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</French>
+<Hungarian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_WEST">
+<English>(WEST)Resp. Z offset:</English>
+<German>(WEST)Resp. Z offset:</German>
+<Spanish>(WEST)Resp. Z offset:</Spanish>
+<Czech>(WEST)Resp. Z offset:</Czech>
+<Russian>(WEST)Resp. Z offset:</Russian>
+<Italian>(WEST)Resp. Z offset:</Italian>
+<Polish>(WEST)Resp. Z offset:</Polish>
+<French>(WEST)Resp. Z offset:</French>
+<Hungarian>(WEST)Resp. Z offset:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_WEST_INFO">
+<English>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</English>
+<German>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</German>
+<Spanish>Offset de altura para los respawn. Util por ejemplo para respawns en un edificio o portaaviones. EJ: [0,0]</Spanish>
+<Czech>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Czech>
+<Russian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Russian>
+<Italian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Italian>
+<Polish>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Polish>
+<French>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</French>
+<Hungarian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_EAST">
+<English>(EAST)Button Text:</English>
+<German>(EAST)Button Text:</German>
+<Spanish>(EAST)Texto Botones:</Spanish>
+<Czech>(EAST)Button Text:</Czech>
+<Russian>(EAST)Button Text:</Russian>
+<Italian>(EAST)Button Text:</Italian>
+<Polish>(EAST)Button Text:</Polish>
+<French>(EAST)Button Text:</French>
+<Hungarian>(EAST)Button Text:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_EAST_INFO">
+<English>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</English>
+<German>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</German>
+<Spanish>Texto de los botones. Numero ilimitado de marcadores, se pueden agregar los necesarios. Ejemplo con solo 2 botones :  ["respawn1", "respawn2"]</Spanish>
+<Czech>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Czech>
+<Russian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Russian>
+<Italian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Italian>
+<Polish>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Polish>
+<French>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</French>
+<Hungarian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_EAST">
+<English>(EAST)Resp Markers:</English>
+<German>(EAST)Resp Markers:</German>
+<Spanish>(EAST)Resp Markers:</Spanish>
+<Czech>(EAST)Resp Markers:</Czech>
+<Russian>(EAST)Resp Markers:</Russian>
+<Italian>(EAST)Resp Markers:</Italian>
+<Polish>(EAST)Resp Markers:</Polish>
+<French>(EAST)Resp Markers:</French>
+<Hungarian>(EAST)Resp Markers:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_EAST_INFO">
+<English>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</English>
+<German>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</German>
+<Spanish>Nombre de los marcadores de respawn. EJ: ["respawn1_marker", "respawn2_marker"]</Spanish>
+<Czech>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Czech>
+<Russian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Russian>
+<Italian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Italian>
+<Polish>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Polish>
+<French>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</French>
+<Hungarian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_EAST">
+<English>(EAST)Resp. Z offset:</English>
+<German>(EAST)Resp. Z offset:</German>
+<Spanish>(EAST)Resp. Z offset:</Spanish>
+<Czech>(EAST)Resp. Z offset:</Czech>
+<Russian>(EAST)Resp. Z offset:</Russian>
+<Italian>(EAST)Resp. Z offset:</Italian>
+<Polish>(EAST)Resp. Z offset:</Polish>
+<French>(EAST)Resp. Z offset:</French>
+<Hungarian>(EAST)Resp. Z offset:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_EAST_INFO">
+<English>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</English>
+<German>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</German>
+<Spanish>Offset de altura para los respawn. Util por ejemplo para respawns en un edificio o portaaviones. EJ: [0,0]</Spanish>
+<Czech>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Czech>
+<Russian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Russian>
+<Italian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Italian>
+<Polish>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Polish>
+<French>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</French>
+<Hungarian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_GUER">
+<English>(GUER)Button Text:</English>
+<German>(GUER)Button Text:</German>
+<Spanish>(GUER)Texto Botones:</Spanish>
+<Czech>(GUER)Button Text:</Czech>
+<Russian>(GUER)Button Text:</Russian>
+<Italian>(GUER)Button Text:</Italian>
+<Polish>(GUER)Button Text:</Polish>
+<French>(GUER)Button Text:</French>
+<Hungarian>(GUER)Button Text:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_GUER_INFO">
+<English>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</English>
+<German>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</German>
+<Spanish>Texto de los botones. Numero ilimitado de marcadores, se pueden agregar los necesarios. Ejemplo con solo 2 botones :  ["respawn1", "respawn2"]</Spanish>
+<Czech>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Czech>
+<Russian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Russian>
+<Italian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Italian>
+<Polish>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Polish>
+<French>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</French>
+<Hungarian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_GUER">
+<English>(GUER)Resp Markers:</English>
+<German>(GUER)Resp Markers:</German>
+<Spanish>(GUER)Resp Markers:</Spanish>
+<Czech>(GUER)Resp Markers:</Czech>
+<Russian>(GUER)Resp Markers:</Russian>
+<Italian>(GUER)Resp Markers:</Italian>
+<Polish>(GUER)Resp Markers:</Polish>
+<French>(GUER)Resp Markers:</French>
+<Hungarian>(GUER)Resp Markers:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_GUER_INFO">
+<English>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</English>
+<German>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</German>
+<Spanish>Nombre de los marcadores de respawn. EJ: ["respawn1_marker", "respawn2_marker"]</Spanish>
+<Czech>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Czech>
+<Russian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Russian>
+<Italian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Italian>
+<Polish>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Polish>
+<French>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</French>
+<Hungarian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_GUER">
+<English>(GUER)Resp. Z offset:</English>
+<German>(GUER)Resp. Z offset:</German>
+<Spanish>(GUER)Resp. Z offset:</Spanish>
+<Czech>(GUER)Resp. Z offset:</Czech>
+<Russian>(GUER)Resp. Z offset:</Russian>
+<Italian>(GUER)Resp. Z offset:</Italian>
+<Polish>(GUER)Resp. Z offset:</Polish>
+<French>(GUER)Resp. Z offset:</French>
+<Hungarian>(GUER)Resp. Z offset:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_GUER_INFO">
+<English>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</English>
+<German>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</German>
+<Spanish>Offset de altura para los respawn. Util por ejemplo para respawns en un edificio o portaaviones. EJ: [0,0]</Spanish>
+<Czech>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Czech>
+<Russian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Russian>
+<Italian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Italian>
+<Polish>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Polish>
+<French>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</French>
+<Hungarian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_CIV">
+<English>(CIV)Button Text:</English>
+<German>(CIV)Button Text:</German>
+<Spanish>(CIV)Texto Botones:</Spanish>
+<Czech>(CIV)Button Text:</Czech>
+<Russian>(CIV)Button Text:</Russian>
+<Italian>(CIV)Button Text:</Italian>
+<Polish>(CIV)Button Text:</Polish>
+<French>(CIV)Button Text:</French>
+<Hungarian>(CIV)Button Text:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_BUTTONTEXT_CIV_INFO">
+<English>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</English>
+<German>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</German>
+<Spanish>Texto de los botones. Numero ilimitado de marcadores, se pueden agregar los necesarios. Ejemplo con solo 2 botones :  ["respawn1", "respawn2"]</Spanish>
+<Czech>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Czech>
+<Russian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Russian>
+<Italian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Italian>
+<Polish>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Polish>
+<French>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</French>
+<Hungarian>Text of the respawn buttons, a text must be defined for each respawn point. There is no limit for the number of respawn points.E.g. :  ["respawn1", "respawn2"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_CIV">
+<English>(CIV)Resp Markers:</English>
+<German>(CIV)Resp Markers:</German>
+<Spanish>(CIV)Resp Markers:</Spanish>
+<Czech>(CIV)Resp Markers:</Czech>
+<Russian>(CIV)Resp Markers:</Russian>
+<Italian>(CIV)Resp Markers:</Italian>
+<Polish>(CIV)Resp Markers:</Polish>
+<French>(CIV)Resp Markers:</French>
+<Hungarian>(CIV)Resp Markers:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESMARKERS_CIV_INFO">
+<English>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</English>
+<German>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</German>
+<Spanish>Nombre de los marcadores de respawn. EJ: ["respawn1_marker", "respawn2_marker"]</Spanish>
+<Czech>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Czech>
+<Russian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Russian>
+<Italian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Italian>
+<Polish>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Polish>
+<French>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</French>
+<Hungarian>Respawn markers names. E.g. ["respawn1_marker", "respawn2_marker"]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_CIV">
+<English>(CIV)Resp. Z offset:</English>
+<German>(CIV)Resp. Z offset:</German>
+<Spanish>(CIV)Resp. Z offset:</Spanish>
+<Czech>(CIV)Resp. Z offset:</Czech>
+<Russian>(CIV)Resp. Z offset:</Russian>
+<Italian>(CIV)Resp. Z offset:</Italian>
+<Polish>(CIV)Resp. Z offset:</Polish>
+<French>(CIV)Resp. Z offset:</French>
+<Hungarian>(CIV)Resp. Z offset:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_RESOFFSET_CIV_INFO">
+<English>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</English>
+<German>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</German>
+<Spanish>Offset de altura para los respawn. Util por ejemplo para respawns en un edificio o portaaviones. EJ: [0,0]</Spanish>
+<Czech>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Czech>
+<Russian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Russian>
+<Italian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Italian>
+<Polish>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Polish>
+<French>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</French>
+<Hungarian>Offset for the respawn point. Usefull for example to define respawn inside buildings or in the carrier. E.g. :[0,0]</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_AFTERDEADSPECT">
+<English>Dead Spect:</English>
+<German>Dead Spect:</German>
+<Spanish>Spect Muerto:</Spanish>
+<Czech>Dead Spect:</Czech>
+<Russian>Dead Spect:</Russian>
+<Italian>Dead Spect:</Italian>
+<Polish>Dead Spect:</Polish>
+<French>Dead Spect:</French>
+<Hungarian>Dead Spect:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_AFTERDEADSPECT_INFO">
+<English>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</English>
+<German>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</German>
+<Spanish>Activar el espectador una vez el jugador se queda sin vidadas. Si se pone a false, el jugador rebira la pantalla de fin de mision al quedarse sin vidas.</Spanish>
+<Czech>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</Czech>
+<Russian>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</Russian>
+<Italian>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</Italian>
+<Polish>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</Polish>
+<French>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</French>
+<Hungarian>Start spectator after you run out of lifes. If disabled, once you are out of lives you are kicked ( you get the end mission screen, just for you)</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_AUTORESPAWN">
+<English>T.Out Auto-Respawn:</English>
+<German>T.Out Auto-Respawn:</German>
+<Spanish>T.Out Auto-Respawn:</Spanish>
+<Czech>T.Out Auto-Respawn:</Czech>
+<Russian>T.Out Auto-Respawn:</Russian>
+<Italian>T.Out Auto-Respawn:</Italian>
+<Polish>T.Out Auto-Respawn:</Polish>
+<French>T.Out Auto-Respawn:</French>
+<Hungarian>T.Out Auto-Respawn:</Hungarian>
+</Key>
+<Key ID="STR_PARAM_COLUM_REV_AUTORESPAWN_INFO">
+<English>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</English>
+<German>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</German>
+<Spanish>Al acaberse el tiempo de vida (ace_wounds_prevtime) el jugador respawnea automaticamente en el primer respawn definido de su bando. Si se pone a false, el jugador tendra la pantalla en negro hasta que pulse una opcion de respawn</Spanish>
+<Czech>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</Czech>
+<Russian>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</Russian>
+<Italian>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</Italian>
+<Polish>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</Polish>
+<French>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</French>
+<Hungarian>If the life timer runs out with respawn active you will auto respawn on the first available respawn point. If set to disabled, you will get a black screen with the spawn buttons till you hit some of them</Hungarian>
+</Key>
+
+</Container>
+
+<!----------------- REVIVE Strings------------------->
+<Container name="STR_COLUM_REVIVE_LANGUAGE">
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_1">
+<English>Lifes: %1 of %2</English>
+<German>Lifes: %1 of %2</German>
+<Spanish>Vidas: %1 de %2</Spanish>
+<Czech>Lifes: %1 of %2</Czech>
+<Russian>Жизнь: %1 от %2</Russian>
+<Italian>Lifes: %1 of %2</Italian>
+<Polish>Lifes: %1 of %2</Polish>
+<French>Lifes: %1 of %2</French>
+<Hungarian>Lifes: %1 of %2</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_UNLIMITEDLIFES">
+<English>Lifes: unlimited</English>
+<German>Lifes: unlimited</German>
+<Spanish>Vidas: ilimitadas</Spanish>
+<Czech>Lifes: unlimited</Czech>
+<Russian>Lifes: unlimited</Russian>
+<Italian>Lifes: unlimited</Italian>
+<Polish>Lifes: unlimited</Polish>
+<French>Lifes: unlimited</French>
+<Hungarian>Lifes: unlimited</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_2">
+<English>You are death</English>
+<German>You are death</German>
+<Spanish>Estas muerto</Spanish>
+<Czech>You are death</Czech>
+<Russian>Вы были убиты...</Russian>
+<Italian>You are death</Italian>
+<Polish>You are death</Polish>
+<French>You are death</French>
+<Hungarian>You are death</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_3">
+<English>You are heavily wounded: You where wounded by %1. FRIENDLY FIRE</English>
+<German>You are heavily wounded: You where wounded by %1. FRIENDLY FIRE</German>
+<Spanish>Estas gravemente herido: %1 te ha herido. FUEGO AMIGO</Spanish>
+<Czech>You are heavily wounded: You where wounded by %1. FRIENDLY FIRE</Czech>
+<Russian>Вы получили ранение от %1. FRIENDLY FIRE</Russian>
+<Italian>You are heavily wounded: You where wounded by %1. FRIENDLY FIRE</Italian>
+<Polish>You are heavily wounded: You where wounded by %1. FRIENDLY FIRE</Polish>
+<French>You are heavily wounded: You where wounded by %1. FRIENDLY FIRE</French>
+<Hungarian>You are heavily wounded: You where wounded by %1. FRIENDLY FIRE</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_4">
+<English>You are heavily wounded</English>
+<German>You are heavily wounded</German>
+<Spanish>Estas gravemente herido.</Spanish>
+<Czech>You are heavily wounded</Czech>
+<Russian>Вы тяжело ранены.</Russian>
+<Italian>You are heavily wounded</Italian>
+<Polish>You are heavily wounded</Polish>
+<French>You are heavily wounded</French>
+<Hungarian>You are heavily wounded</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_5">
+<English>You are heavily wounded:You committed suicide</English>
+<German>You are heavily wounded:You committed suicide</German>
+<Spanish>Estas gravemente herido: Te has suicidado</Spanish>
+<Czech>You are heavily wounded:You committed suicide</Czech>
+<Russian>Вы тяжело ранены: Вы совершили самоубийство.</Russian>
+<Italian>You are heavily wounded:You committed suicide</Italian>
+<Polish>You are heavily wounded:You committed suicide</Polish>
+<French>You are heavily wounded:You committed suicide</French>
+<Hungarian>You are heavily wounded:You committed suicide</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_6">
+<English>You have entered a medic zone. Wait to be healed...</English>
+<German>You have entered a medic zone. Wait to be healed...</German>
+<Spanish>Has entrado en una zona medica. Espera a ser atendido...</Spanish>
+<Czech>You have entered a medic zone. Wait to be healed...</Czech>
+<Russian>Вы находитесь на территории полевого госпиталя. Подождите, чтобы получить санитарную помощь....</Russian>
+<Italian>You have entered a medic zone. Wait to be healed...</Italian>
+<Polish>You have entered a medic zone. Wait to be healed...</Polish>
+<French>You have entered a medic zone. Wait to be healed...</French>
+<Hungarian>You have entered a medic zone. Wait to be healed...</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_7">
+<English>Please, ONLY use respawn button in needed situations</English>
+<German>Please, ONLY use respawn button in needed situations</German>
+<Spanish>Por favor, SOLO usar el boton respawn en el caso de que sea necesario.</Spanish>
+<Czech>Please, ONLY use respawn button in needed situations</Czech>
+<Russian>Пожалуйста, используйте кнопку возрождения только в действительно нужных ситуациях</Russian>
+<Italian>Please, ONLY use respawn button in needed situations</Italian>
+<Polish>Please, ONLY use respawn button in needed situations</Polish>
+<French>Please, ONLY use respawn button in needed situations</French>
+<Hungarian>Please, ONLY use respawn button in needed situations</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_8">
+<English>Respawning...</English>
+<German>Respawning...</German>
+<Spanish>Reapareciendo...</Spanish>
+<Czech>Respawning...</Czech>
+<Russian>Идет возрождение...</Russian>
+<Italian>Respawning...</Italian>
+<Polish>Respawning...</Polish>
+<French>Respawning...</French>
+<Hungarian>Respawning...</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_9">
+<English>Press F12 within the next 5 minutes to teleport with your squad/allies</English>
+<German>Press F12 within the next 5 minutes to teleport with your squad/allies</German>
+<Spanish>Presiona F12 durante los proximos 5 minutos para ir con tu escuadra/aliados</Spanish>
+<Czech>Press F12 within the next 5 minutes to teleport with your squad/allies</Czech>
+<Russian>Нажмите кнопку ф12 в течение следующих 5 минут, чтобы быть телепортированным к вашему отряду\союзникам.</Russian>
+<Italian>Press F12 within the next 5 minutes to teleport with your squad/allies</Italian>
+<Polish>Press F12 within the next 5 minutes to teleport with your squad/allies</Polish>
+<French>Press F12 within the next 5 minutes to teleport with your squad/allies</French>
+<Hungarian>Press F12 within the next 5 minutes to teleport with your squad/allies</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_10">
+<English>%1 Friendly Fire!!, you have wounded %2</English>
+<German>%1 Friendly Fire!!, you have wounded %2</German>
+<Spanish>%1 Fuego amigo!!, has herido a %2</Spanish>
+<Czech>%1 Friendly Fire!!, you have wounded %2</Czech>
+<Russian>%1 Дружественный огонь! Вы получили ранение %2</Russian>
+<Italian>%1 Friendly Fire!!, you have wounded %2</Italian>
+<Polish>%1 Friendly Fire!!, you have wounded %2</Polish>
+<French>%1 Friendly Fire!!, you have wounded %2</French>
+<Hungarian>%1 Friendly Fire!!, you have wounded %2</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_11">
+<English>%1 is heavily wounded</English>
+<German>%1 is heavily wounded</German>
+<Spanish>%1 se encuentra gravemente herido</Spanish>
+<Czech>%1 is heavily wounded</Czech>
+<Russian>%1 тяжело ранен.</Russian>
+<Italian>%1 is heavily wounded</Italian>
+<Polish>%1 is heavily wounded</Polish>
+<French>%1 is heavily wounded</French>
+<Hungarian>%1 is heavily wounded</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_12">
+<English>Revive JIP failure to retrieve lifes, please report this error</English>
+<German>Revive JIP failure to retrieve lifes, please report this error</German>
+<Spanish>Error JIP, por favor reporta este error</Spanish>
+<Czech>Revive JIP failure to retrieve lifes, please report this error</Czech>
+<Russian>JIP не смог извлечь количество оставшихся жизней. Пожалуйста, сообщите нам об этой ошибке.</Russian>
+<Italian>Revive JIP failure to retrieve lifes, please report this error</Italian>
+<Polish>Revive JIP failure to retrieve lifes, please report this error</Polish>
+<French>Revive JIP failure to retrieve lifes, please report this error</French>
+<Hungarian>Revive JIP failure to retrieve lifes, please report this error</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_13">
+<English>Your body is washing ashore please wait</English>
+<German>Your body is washing ashore please wait</German>
+<Spanish>La corriente te lleva hacia la costa...</Spanish>
+<Czech>Your body is washing ashore please wait</Czech>
+<Russian>Ваше тело приближается к берегу, пожалуйста подождите...</Russian>
+<Italian>Your body is washing ashore please wait</Italian>
+<Polish>Your body is washing ashore please wait</Polish>
+<French>Your body is washing ashore please wait</French>
+<Hungarian>Your body is washing ashore please wait</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_14">
+<English>%1 wounded</English>
+<German>%1 wounded</German>
+<Spanish>%1 herido</Spanish>
+<Czech>%1 wounded</Czech>
+<Russian>%1 ранен</Russian>
+<Italian>%1 wounded</Italian>
+<Polish>%1 wounded</Polish>
+<French>%1 wounded</French>
+<Hungarian>%1 wounded</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_15">
+<English>(%1)More...</English>
+<German>(%1)More...</German>
+<Spanish>(%1)Mas...</Spanish>
+<Czech>(%1)More...</Czech>
+<Russian>(%1)Еще...</Russian>
+<Italian>(%1)More...</Italian>
+<Polish>(%1)More...</Polish>
+<French>(%1)More...</French>
+<Hungarian>(%1)More...</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_16">
+<English>There is no medics left alive, so you won't be able to be revived</English>
+<German>There is no medics left alive, so you won't be able to be revived</German>
+<Spanish>No quedan medicos con vida, por lo que no podras ser revivido</Spanish>
+<Czech>There is no medics left alive, so you won't be able to be revived</Czech>
+<Russian>Все санитары погибли...</Russian>
+<Italian>There is no medics left alive, so you won't be able to be revived</Italian>
+<Polish>There is no medics left alive, so you won't be able to be revived</Polish>
+<French>There is no medics left alive, so you won't be able to be revived</French>
+<Hungarian>There is no medics left alive, so you won't be able to be revived</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_LANGUAGE_17">
+<English>Respawn available in: %1</English>
+<German>Respawn available in: %1</German>
+<Spanish>Respawn disponible en: %1</Spanish>
+<Czech>Respawn available in: %1</Czech>
+<Russian>Возрождение будет доступно через: %1</Russian>
+<Italian>Respawn available in: %1</Italian>
+<Polish>Respawn available in: %1</Polish>
+<French>Respawn available in: %1</French>
+<Hungarian>Respawn available in: %1</Hungarian>
+</Key>
+
+<!----------------- REVIVE MEDEVAC ------------------->
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_1">
+<English>There is no medevac avaliable at the moment</English>
+<German>There is no medevac avaliable at the moment</German>
+<Spanish>No hay ningún helicóptero disponible para la extracción, mantengase a la espera</Spanish>
+<Czech>There is no medevac avaliable at the moment</Czech>
+<Russian>В данный момент нет доступной медэвакуации.</Russian>
+<Italian>There is no medevac avaliable at the moment</Italian>
+<Polish>There is no medevac avaliable at the moment</Polish>
+<French>There is no medevac avaliable at the moment</French>
+<Hungarian>There is no medevac avaliable at the moment</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_2">
+<English>Smoke in sight</English>
+<German>Smoke in sight</German>
+<Spanish>Humo avistado</Spanish>
+<Czech>Smoke in sight</Czech>
+<Russian>Мы обнаружили дым.</Russian>
+<Italian>Smoke in sight</Italian>
+<Polish>Smoke in sight</Polish>
+<French>Smoke in sight</French>
+<Hungarian>Smoke in sight</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_3">
+<English>We can't locate the smoke, we are low of fuel, returning to base</English>
+<German>We can't locate the smoke, we are low of fuel, returning to base</German>
+<Spanish>No hemos avistado el humo, regresamos a base</Spanish>
+<Czech>We can't locate the smoke, we are low of fuel, returning to base</Czech>
+<Russian>Мы не видим дым, у нас осталось мало горючего, возвращаемся на базу.</Russian>
+<Italian>We can't locate the smoke, we are low of fuel, returning to base</Italian>
+<Polish>We can't locate the smoke, we are low of fuel, returning to base</Polish>
+<French>We can't locate the smoke, we are low of fuel, returning to base</French>
+<Hungarian>We can't locate the smoke, we are low of fuel, returning to base</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_4">
+<English>HQ understood, sending medevac. Get ready to throw green smoke</English>
+<German>HQ understood, sending medevac. Get ready to throw green smoke</German>
+<Spanish>Centro de mando recibido, enviando helicóptero de ecuación medica. Preparen humo verde</Spanish>
+<Czech>HQ understood, sending medevac. Get ready to throw green smoke</Czech>
+<Russian>Принято, высылаем эвакуацию. Приготовтесь бросить дымовую гранату.</Russian>
+<Italian>HQ understood, sending medevac. Get ready to throw green smoke</Italian>
+<Polish>HQ understood, sending medevac. Get ready to throw green smoke</Polish>
+<French>HQ understood, sending medevac. Get ready to throw green smoke</French>
+<Hungarian>HQ understood, sending medevac. Get ready to throw green smoke</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_5">
+<English>Roger, medevac returnig base</English>
+<German>Roger, medevac returnig base</German>
+<Spanish>Roger, Helicóptero medico regresando a base</Spanish>
+<Czech>Roger, medevac returnig base</Czech>
+<Russian>Принято, эвакуация возвращается на базу.</Russian>
+<Italian>Roger, medevac returnig base</Italian>
+<Polish>Roger, medevac returnig base</Polish>
+<French>Roger, medevac returnig base</French>
+<Hungarian>Roger, medevac returnig base</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_6">
+<English>Medevac aproaching landing zone, mark a safe zone with green smoke</English>
+<German>Medevac aproaching landing zone, mark a safe zone with green smoke</German>
+<Spanish>Pájaro aproximandose a zona de extracción, buscando humo verde</Spanish>
+<Czech>Medevac aproaching landing zone, mark a safe zone with green smoke</Czech>
+<Russian>Вертолет приближается к зоне посадки, отметьте безопасную зону с зеленой дымовой гранатой!</Russian>
+<Italian>Medevac aproaching landing zone, mark a safe zone with green smoke</Italian>
+<Polish>Medevac aproaching landing zone, mark a safe zone with green smoke</Polish>
+<French>Medevac aproaching landing zone, mark a safe zone with green smoke</French>
+<Hungarian>Medevac aproaching landing zone, mark a safe zone with green smoke</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_7">
+<English>Negative, you are almost in the base.</English>
+<German>Negative, you are almost in the base.</German>
+<Spanish>Negativo, demasiado cerca.</Spanish>
+<Czech>Negative, you are almost in the base.</Czech>
+<Russian>Никак нет, вы находитесь почти у базы.</Russian>
+<Italian>Negative, you are almost in the base.</Italian>
+<Polish>Negative, you are almost in the base.</Polish>
+<French>Negative, you are almost in the base.</French>
+<Hungarian>Negative, you are almost in the base.</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_8">
+<English>Call medevac</English>
+<German>Call medevac</German>
+<Spanish>Llamar evacuacion</Spanish>
+<Czech>Call medevac</Czech>
+<Russian>Вызвать эвакуацию.</Russian>
+<Italian>Call medevac</Italian>
+<Polish>Call medevac</Polish>
+<French>Call medevac</French>
+<Hungarian>Call medevac</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_9">
+<English>Everybody in, GO GO GO!.</English>
+<German>Everybody in, GO GO GO!.</German>
+<Spanish>Todos dentro, nos vamos.</Spanish>
+<Czech>Everybody in, GO GO GO!.</Czech>
+<Russian>Все в вертолёт, живее!!!</Russian>
+<Italian>Everybody in, GO GO GO!.</Italian>
+<Polish>Everybody in, GO GO GO!.</Polish>
+<French>Everybody in, GO GO GO!.</French>
+<Hungarian>Everybody in, GO GO GO!.</Hungarian>
+</Key>
+<Key ID="STR_COLUM_REVIVE_MEDEVAC_LANGUAGE_10">
+<English>Loading into mission, previous data detected, restoring last state...</English>
+<German>Loading into mission, previous data detected, restoring last state...</German>
+<Spanish>Cargando mision. Detectada conexion previa, restaurando ultimo estado...</Spanish>
+<Czech>Loading into mission, previous data detected, restoring last state...</Czech>
+<Russian>Loading into mission, previous data detected, restoring last state...</Russian>
+<Italian>Loading into mission, previous data detected, restoring last state...</Italian>
+<Polish>Loading into mission, previous data detected, restoring last state...</Polish>
+<French>Loading into mission, previous data detected, restoring last state...</French>
+<Hungarian>Loading into mission, previous data detected, restoring last state...</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_COLUM_Disabled">
+<English>Disabled</English>
+<German>Disabled</German>
+<Spanish>Deshabilitado</Spanish>
+<Czech>Disabled</Czech>
+<Russian>Disabled</Russian>
+<Italian>Disabled</Italian>
+<Polish>Disabled</Polish>
+<French>Disabled</French>
+<Hungarian>Disabled</Hungarian>
+</Key>
+<Key ID="STR_BUTTONS_COLUM_Enabled">
+<English>Enabled</English>
+<German>Enabled</German>
+<Spanish>Activado</Spanish>
+<Czech>Enabled</Czech>
+<Russian>Enabled</Russian>
+<Italian>Enabled</Italian>
+<Polish>Enabled</Polish>
+<French>Enabled</French>
+<Hungarian>Enabled</Hungarian>
+</Key>
+</Container>
+</Package></Project>

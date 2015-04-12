@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=x\ace\addons\sys_spectator
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'DB0122D943C3BF62BE86D805820B2D8C5C5E9405'
+//////</HEADER>//////
